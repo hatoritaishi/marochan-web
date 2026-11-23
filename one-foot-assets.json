@@ -1,0 +1,2349 @@
+{
+  "version": 1,
+  "canvas": [
+    768,
+    560
+  ],
+  "max_branch_ms": 15000,
+  "min_branch_ms": 10000,
+  "fall_probability": 0.5,
+  "outcome_time_independent": true,
+  "entrance": [
+    [
+      "b00",
+      800
+    ],
+    [
+      "b01",
+      100
+    ],
+    [
+      "b02",
+      100
+    ],
+    [
+      "b03",
+      100
+    ],
+    [
+      "b04",
+      100
+    ],
+    [
+      "b05",
+      100
+    ]
+  ],
+  "wobble": [
+    [
+      "b06",
+      180
+    ],
+    [
+      "b05",
+      140
+    ],
+    [
+      "b04",
+      180
+    ],
+    [
+      "b05",
+      140
+    ]
+  ],
+  "forward": [
+    [
+      "b07",
+      110
+    ],
+    [
+      "b08",
+      170
+    ],
+    [
+      "b07",
+      110
+    ],
+    [
+      "b08",
+      120
+    ]
+  ],
+  "fall": [
+    [
+      "fall-01",
+      90
+    ],
+    [
+      "fall-02",
+      90
+    ],
+    [
+      "fall-03",
+      80
+    ],
+    [
+      "fall-04",
+      70
+    ],
+    [
+      "fall-05",
+      70
+    ],
+    [
+      "fall-06",
+      70
+    ],
+    [
+      "fall-08",
+      1170
+    ],
+    [
+      "fall-09",
+      120
+    ],
+    [
+      "fall-08",
+      180
+    ],
+    [
+      "fall-10",
+      350
+    ],
+    [
+      "fall-11",
+      320
+    ],
+    [
+      "fall-12",
+      180
+    ]
+  ],
+  "return": [
+    [
+      "b06",
+      100
+    ],
+    [
+      "b05",
+      100
+    ],
+    [
+      "b04",
+      100
+    ],
+    [
+      "b03",
+      100
+    ],
+    [
+      "b02",
+      100
+    ],
+    [
+      "b01",
+      100
+    ],
+    [
+      "b00",
+      500
+    ]
+  ],
+  "crying": [
+    [
+      "cry-000",
+      50
+    ],
+    [
+      "cry-001",
+      50
+    ],
+    [
+      "cry-002",
+      50
+    ],
+    [
+      "cry-003",
+      50
+    ],
+    [
+      "cry-004",
+      50
+    ],
+    [
+      "cry-005",
+      50
+    ],
+    [
+      "cry-006",
+      50
+    ],
+    [
+      "cry-007",
+      50
+    ],
+    [
+      "cry-008",
+      50
+    ],
+    [
+      "cry-009",
+      50
+    ],
+    [
+      "cry-010",
+      50
+    ],
+    [
+      "cry-011",
+      50
+    ],
+    [
+      "cry-012",
+      50
+    ],
+    [
+      "cry-013",
+      50
+    ],
+    [
+      "cry-014",
+      50
+    ],
+    [
+      "cry-015",
+      30
+    ],
+    [
+      "cry-016",
+      20
+    ],
+    [
+      "cry-017",
+      50
+    ],
+    [
+      "cry-018",
+      50
+    ],
+    [
+      "cry-019",
+      50
+    ],
+    [
+      "cry-020",
+      50
+    ],
+    [
+      "cry-021",
+      50
+    ],
+    [
+      "cry-022",
+      10
+    ],
+    [
+      "cry-023",
+      40
+    ],
+    [
+      "cry-024",
+      50
+    ],
+    [
+      "cry-025",
+      50
+    ],
+    [
+      "cry-026",
+      50
+    ],
+    [
+      "cry-027",
+      50
+    ],
+    [
+      "cry-028",
+      40
+    ],
+    [
+      "cry-029",
+      10
+    ],
+    [
+      "cry-030",
+      50
+    ],
+    [
+      "cry-031",
+      50
+    ],
+    [
+      "cry-032",
+      50
+    ],
+    [
+      "cry-033",
+      50
+    ],
+    [
+      "cry-034",
+      50
+    ],
+    [
+      "cry-035",
+      50
+    ],
+    [
+      "cry-036",
+      10
+    ],
+    [
+      "cry-037",
+      40
+    ],
+    [
+      "cry-038",
+      50
+    ],
+    [
+      "cry-039",
+      50
+    ],
+    [
+      "cry-040",
+      50
+    ],
+    [
+      "cry-041",
+      50
+    ],
+    [
+      "cry-042",
+      40
+    ],
+    [
+      "cry-043",
+      10
+    ],
+    [
+      "cry-044",
+      50
+    ],
+    [
+      "cry-045",
+      50
+    ],
+    [
+      "cry-046",
+      50
+    ],
+    [
+      "cry-047",
+      50
+    ],
+    [
+      "cry-048",
+      50
+    ],
+    [
+      "cry-049",
+      20
+    ],
+    [
+      "cry-050",
+      30
+    ],
+    [
+      "cry-051",
+      50
+    ],
+    [
+      "cry-052",
+      50
+    ],
+    [
+      "cry-053",
+      50
+    ],
+    [
+      "cry-054",
+      50
+    ],
+    [
+      "cry-055",
+      50
+    ],
+    [
+      "cry-056",
+      40
+    ],
+    [
+      "cry-057",
+      10
+    ],
+    [
+      "cry-058",
+      50
+    ],
+    [
+      "cry-059",
+      50
+    ],
+    [
+      "cry-060",
+      50
+    ],
+    [
+      "cry-061",
+      50
+    ],
+    [
+      "cry-062",
+      50
+    ],
+    [
+      "cry-063",
+      20
+    ],
+    [
+      "cry-064",
+      30
+    ],
+    [
+      "cry-065",
+      50
+    ],
+    [
+      "cry-066",
+      50
+    ],
+    [
+      "cry-067",
+      50
+    ],
+    [
+      "cry-068",
+      50
+    ],
+    [
+      "cry-069",
+      50
+    ],
+    [
+      "cry-070",
+      50
+    ],
+    [
+      "cry-071",
+      50
+    ],
+    [
+      "cry-072",
+      50
+    ],
+    [
+      "cry-073",
+      50
+    ],
+    [
+      "cry-074",
+      50
+    ],
+    [
+      "cry-075",
+      30
+    ],
+    [
+      "cry-076",
+      20
+    ],
+    [
+      "cry-077",
+      50
+    ],
+    [
+      "cry-078",
+      50
+    ],
+    [
+      "cry-079",
+      50
+    ],
+    [
+      "cry-080",
+      50
+    ],
+    [
+      "cry-081",
+      50
+    ],
+    [
+      "cry-082",
+      50
+    ],
+    [
+      "cry-083",
+      50
+    ],
+    [
+      "cry-084",
+      50
+    ],
+    [
+      "cry-085",
+      50
+    ],
+    [
+      "cry-086",
+      50
+    ],
+    [
+      "cry-087",
+      50
+    ],
+    [
+      "cry-088",
+      50
+    ],
+    [
+      "cry-089",
+      50
+    ],
+    [
+      "cry-090",
+      30
+    ],
+    [
+      "cry-091",
+      20
+    ],
+    [
+      "cry-092",
+      50
+    ],
+    [
+      "cry-093",
+      30
+    ],
+    [
+      "cry-094",
+      20
+    ],
+    [
+      "cry-095",
+      50
+    ],
+    [
+      "cry-096",
+      30
+    ],
+    [
+      "cry-097",
+      20
+    ],
+    [
+      "cry-098",
+      50
+    ],
+    [
+      "cry-099",
+      30
+    ],
+    [
+      "cry-100",
+      20
+    ],
+    [
+      "cry-101",
+      50
+    ],
+    [
+      "cry-102",
+      50
+    ],
+    [
+      "cry-103",
+      50
+    ],
+    [
+      "cry-104",
+      50
+    ],
+    [
+      "cry-105",
+      50
+    ],
+    [
+      "cry-106",
+      50
+    ],
+    [
+      "cry-107",
+      30
+    ],
+    [
+      "cry-108",
+      20
+    ],
+    [
+      "cry-109",
+      50
+    ],
+    [
+      "cry-110",
+      50
+    ],
+    [
+      "cry-111",
+      50
+    ],
+    [
+      "cry-112",
+      50
+    ],
+    [
+      "cry-113",
+      50
+    ],
+    [
+      "cry-114",
+      50
+    ],
+    [
+      "cry-115",
+      50
+    ],
+    [
+      "cry-116",
+      50
+    ],
+    [
+      "cry-117",
+      50
+    ],
+    [
+      "cry-118",
+      30
+    ]
+  ],
+  "crying_loop_ms": 5230,
+  "assets": {
+    "b00": {
+      "src": "media/one-foot-v1/balance-00.webp",
+      "sha256": "e4914c9d1eb7fc048e837f1847a448cfa4881a60fd1cc4551e7d723bb5129b69"
+    },
+    "b01": {
+      "src": "media/one-foot-v1/balance-01.webp",
+      "sha256": "7370a755f62e7e7db277b247005f3eec326e5de77f659ed13370f0532018aa70"
+    },
+    "b02": {
+      "src": "media/one-foot-v1/balance-02.webp",
+      "sha256": "98cc0ef858b88749bbf1a0fda440d3294b7b1f355460ede814c9c1205172d73c"
+    },
+    "b03": {
+      "src": "media/one-foot-v1/balance-03.webp",
+      "sha256": "74515acbb08ac0b0a2282a5f239bb2c4f96d22f517c7d7cef0b180abf52ca1f8"
+    },
+    "b04": {
+      "src": "media/one-foot-v1/balance-04.webp",
+      "sha256": "2c4d685fede438615e9515a196a86c40a629936d52478d74e0760972da517e17"
+    },
+    "b05": {
+      "src": "media/one-foot-v1/balance-05.webp",
+      "sha256": "adfb3202ad4c4192bf40611aae84b2ceefd4f0ba901052353ddbc90b5877b348"
+    },
+    "b06": {
+      "src": "media/one-foot-v1/balance-06.webp",
+      "sha256": "3f5d54b12e8a9c23db1bf42c6553bc6d37b7bfc0aec28e98000856ddd65b2e4f"
+    },
+    "b07": {
+      "src": "media/one-foot-v1/balance-07.webp",
+      "sha256": "4add18cff2dd1a9ebc54ad9662e5bdfec180d207460a867a5e311361a4d872ca"
+    },
+    "b08": {
+      "src": "media/one-foot-v1/balance-08.webp",
+      "sha256": "f39d1f7605750d175f76fd761c1b4894bfa6c816f6af4eae1d0352545c1140bc"
+    },
+    "b09": {
+      "src": "media/one-foot-v1/balance-09.webp",
+      "sha256": "da2d16e8e493bd3c035f32a5b4a5db82fb07b6871734e9868475093dc6372b46"
+    },
+    "b10": {
+      "src": "media/one-foot-v1/balance-10.webp",
+      "sha256": "b416374ee43251da9f927ba91ea164c565f1ece4cd524da787a1915a1a95ba14"
+    },
+    "b11": {
+      "src": "media/one-foot-v1/balance-11.webp",
+      "sha256": "161dd5404444f029c7caef079698733f53437029eeee5bece4876f15247befbc"
+    },
+    "b12": {
+      "src": "media/one-foot-v1/balance-12.webp",
+      "sha256": "588bacb1028fbeab05b35b00820fd222d80e8e2c717d79de71ad2b6e20185169"
+    },
+    "fall-01": {
+      "src": "media/one-foot-v1/fall-01.webp",
+      "sha256": "6c9912e193cac21bd9cace7e09ae7ad71c8ed773d8690d7d6439c375f7d0ee17"
+    },
+    "fall-02": {
+      "src": "media/one-foot-v1/fall-02.webp",
+      "sha256": "29f1ff23d5f77b79bbec86c3bbc7766ee727cf62f53672cc19622f8b4e211f79"
+    },
+    "fall-03": {
+      "src": "media/one-foot-v1/fall-03.webp",
+      "sha256": "4cc9a84d66a12030d878e778ee419136661e4fed3be1f4119a52f5a547ef9d9e"
+    },
+    "fall-04": {
+      "src": "media/one-foot-v1/fall-04.webp",
+      "sha256": "65d36a96e8ce7bdcd26a250e1a4a5d74eb75cf2f8332f464241727ad4de0643c"
+    },
+    "fall-05": {
+      "src": "media/one-foot-v1/fall-05.webp",
+      "sha256": "0a29a8803e2bad82e6cc1cdd441d03f45e37a3b86e71be1c0107134581e02c93"
+    },
+    "fall-06": {
+      "src": "media/one-foot-v1/fall-06.webp",
+      "sha256": "4fe7f0fe03fa16d03402610f1b0957d1e2bf6072f8ad2fa285bb703ef8c49e64"
+    },
+    "fall-08": {
+      "src": "media/one-foot-v1/fall-08.webp",
+      "sha256": "758d5c076bd1add46085eef36a4979c80e1a3c924211018424ab52d768d66240"
+    },
+    "fall-09": {
+      "src": "media/one-foot-v1/fall-09.webp",
+      "sha256": "f60cca2fc7be85f7834e01cab87056a0a9417f075d1c8221f7fec8675b9bfd37"
+    },
+    "fall-10": {
+      "src": "media/one-foot-v1/fall-10.webp",
+      "sha256": "394f135c075cc82153d17864c6a9690778f8e4bb4895c3be3bbca6f5ae3049d8"
+    },
+    "fall-11": {
+      "src": "media/one-foot-v1/fall-11.webp",
+      "sha256": "76ab7fa2a6b40acf6441bfbecce450b437a2e29775034536eafff7a78004b25a"
+    },
+    "fall-12": {
+      "src": "media/one-foot-v1/fall-12.webp",
+      "sha256": "5cb3b15adbae74deaac5e8be72ae7a914697f620ee2ee846b40ec273b00c5c03"
+    },
+    "cry-000": {
+      "src": "media/one-foot-v1/cry-000.webp",
+      "sha256": "a7388ad6d16d55e6abca457b06d3ec930d79e5ca46b2adf2ed2b033600f630ba"
+    },
+    "cry-001": {
+      "src": "media/one-foot-v1/cry-001.webp",
+      "sha256": "0aa3525c014e925d081299020f11f073d3dfa410829a2c6a77c58b752b1ae854"
+    },
+    "cry-002": {
+      "src": "media/one-foot-v1/cry-002.webp",
+      "sha256": "4ae56a95ba23a63a05e8353eaf6d4a1604d6e76da47629812c92b5451db4a595"
+    },
+    "cry-003": {
+      "src": "media/one-foot-v1/cry-003.webp",
+      "sha256": "232ba3e25ccba4d97cb43af6d9424e626d45cb5131eb45c7ea6f4f125ef09844"
+    },
+    "cry-004": {
+      "src": "media/one-foot-v1/cry-004.webp",
+      "sha256": "5f5cefb9fa209191c79581baa8378680ecc847e71dafc92a9fd658c7e0d27faf"
+    },
+    "cry-005": {
+      "src": "media/one-foot-v1/cry-005.webp",
+      "sha256": "167c5074b0460aeaaeb8e945715f4c1163534f779fe3129dc3af4db01dc876c6"
+    },
+    "cry-006": {
+      "src": "media/one-foot-v1/cry-006.webp",
+      "sha256": "1fc80ccab620a2a006291e044cf64b3a9f87ec200fa8ce059fad8cf15377c379"
+    },
+    "cry-007": {
+      "src": "media/one-foot-v1/cry-007.webp",
+      "sha256": "bacf924154268c48fcc64fe8ea1d5a6ba3d0e730389c47baca0e91dfabfddab8"
+    },
+    "cry-008": {
+      "src": "media/one-foot-v1/cry-008.webp",
+      "sha256": "992f75835e588709d37dbe52bae4bdadecd525f8eb7fba965390887cb1c6b9bc"
+    },
+    "cry-009": {
+      "src": "media/one-foot-v1/cry-009.webp",
+      "sha256": "8fb7b7024246b72da8668282239510f8b057a82edb6ddef94360741588af066d"
+    },
+    "cry-010": {
+      "src": "media/one-foot-v1/cry-010.webp",
+      "sha256": "a11c0da7a2a0708a07fd92514292b43ec449b23625c67df269094fb4096b4d67"
+    },
+    "cry-011": {
+      "src": "media/one-foot-v1/cry-011.webp",
+      "sha256": "6809084bad6cf16409c8284b7c90a5edda21ed86ee5e8b204a0800b1e5fe7f6d"
+    },
+    "cry-012": {
+      "src": "media/one-foot-v1/cry-012.webp",
+      "sha256": "6af85c4260dd1be73353df4fb0aaf59ba46d4684fd90ea9db92f193ba896f49c"
+    },
+    "cry-013": {
+      "src": "media/one-foot-v1/cry-013.webp",
+      "sha256": "5667ec7360cbbc4325ba4c0ae75f14a905d4bbbf7cfd301491e98702d1ac6795"
+    },
+    "cry-014": {
+      "src": "media/one-foot-v1/cry-014.webp",
+      "sha256": "cb0fa9123af759b5fa4b1fc927a88c92dc4f022d392c1df594cd8eedc7a1ece9"
+    },
+    "cry-015": {
+      "src": "media/one-foot-v1/cry-015.webp",
+      "sha256": "adb55d93a41de11a20156ab111e9c558836ff2203ba8d02c6132b67246caac1c"
+    },
+    "cry-016": {
+      "src": "media/one-foot-v1/cry-016.webp",
+      "sha256": "8985387cb945700e9f7fd1ed3a7a3fafb80241ed8447339c4c552ebbdd91bb97"
+    },
+    "cry-017": {
+      "src": "media/one-foot-v1/cry-017.webp",
+      "sha256": "9210a437efe5fb68d4b72d8a5fae6b7c696e08ac538ed3bd1f262e24c3f2975d"
+    },
+    "cry-018": {
+      "src": "media/one-foot-v1/cry-018.webp",
+      "sha256": "52422536623394e91d9ac7ac689679e703d3f15b336aecb261484ca3a7fb9793"
+    },
+    "cry-019": {
+      "src": "media/one-foot-v1/cry-019.webp",
+      "sha256": "e93bbe0265a1e9cbd84497e7fac91cec1508499339ade6a74e6cbe6ac288c48d"
+    },
+    "cry-020": {
+      "src": "media/one-foot-v1/cry-020.webp",
+      "sha256": "b8caf10b32db004c94618b68fa62d233fb9fddd8291c023522328b4a18aff6f7"
+    },
+    "cry-021": {
+      "src": "media/one-foot-v1/cry-021.webp",
+      "sha256": "58e5c484f3114f45819ef2e73205abf475ed7e5be77850c0b2789e5dd850bdd7"
+    },
+    "cry-022": {
+      "src": "media/one-foot-v1/cry-022.webp",
+      "sha256": "435195fd65cbc0e27e7fb100abe899bf2d2cce8a5dfce5f7abdb0f5b2daea750"
+    },
+    "cry-023": {
+      "src": "media/one-foot-v1/cry-023.webp",
+      "sha256": "8109a6d189381f75f1a45676fec667d6d08afdd7f7de1bdbe6edc810c4936cb4"
+    },
+    "cry-024": {
+      "src": "media/one-foot-v1/cry-024.webp",
+      "sha256": "59a38c8474baaf53c4e87adc651f86160c4884f27823ea62505e87a6c7591aa6"
+    },
+    "cry-025": {
+      "src": "media/one-foot-v1/cry-025.webp",
+      "sha256": "99d12a3bf73e990c515f0d936bffe58dc7985177104c61d5b5a9749b7645adbb"
+    },
+    "cry-026": {
+      "src": "media/one-foot-v1/cry-026.webp",
+      "sha256": "f28f3e43893d093c0f39868a3fca96427a536d81d01b4e681dd3a82ef04603b1"
+    },
+    "cry-027": {
+      "src": "media/one-foot-v1/cry-027.webp",
+      "sha256": "35cd373d3f6daa7bdceb3ae27781df81a0ef80fe49c64f4cb29bd1ff5085fffd"
+    },
+    "cry-028": {
+      "src": "media/one-foot-v1/cry-028.webp",
+      "sha256": "41321fcecd1ddaee0acde272d091c8eea5d955e54a8267d72c0d50b0ac8cbf09"
+    },
+    "cry-029": {
+      "src": "media/one-foot-v1/cry-029.webp",
+      "sha256": "fdeef325c777289451e63b53ca44e6b6ada5d52f5b01ea1b5098ffa60a360270"
+    },
+    "cry-030": {
+      "src": "media/one-foot-v1/cry-030.webp",
+      "sha256": "f5dba0957db64791268019e04bf4cbc8edc7161f9a7b13abeff74ebc97c62e09"
+    },
+    "cry-031": {
+      "src": "media/one-foot-v1/cry-031.webp",
+      "sha256": "128261d478369b7a3aab75d1dce318b41fd3623fc56dbc821a859869b9aafe0c"
+    },
+    "cry-032": {
+      "src": "media/one-foot-v1/cry-032.webp",
+      "sha256": "2a419193b59521e1c10557a22ee357bb77745879a1b738ba243b4009c734dfea"
+    },
+    "cry-033": {
+      "src": "media/one-foot-v1/cry-033.webp",
+      "sha256": "419ce0afb5abf434c82eac60745cb321c4b6a53978f8372851b425c9bfdf01a7"
+    },
+    "cry-034": {
+      "src": "media/one-foot-v1/cry-034.webp",
+      "sha256": "7717d9bd679ad3c14f060f03c6205511432c7aea969da3c8f86e63326b994539"
+    },
+    "cry-035": {
+      "src": "media/one-foot-v1/cry-035.webp",
+      "sha256": "9dcedc4d5f951b818d93160344b7f787119b64f2b03e73cf63d84ccb48f35fe8"
+    },
+    "cry-036": {
+      "src": "media/one-foot-v1/cry-036.webp",
+      "sha256": "6ddb68f0e243aab1caea16cb4c81cb08c60612ec1534adaebae5c3d82263559d"
+    },
+    "cry-037": {
+      "src": "media/one-foot-v1/cry-037.webp",
+      "sha256": "ea1cb3d70455e890cfe34298eb1ca04d0c50c6a68a828537a8a79cd0fd844bac"
+    },
+    "cry-038": {
+      "src": "media/one-foot-v1/cry-038.webp",
+      "sha256": "26d182b716b2eb03eb8c808561c1be22b1c26cae749525f6e97e1eeda9ebcbd0"
+    },
+    "cry-039": {
+      "src": "media/one-foot-v1/cry-039.webp",
+      "sha256": "6ee8c2fe0b3fa9fba083111164da1dda54722dd98c54c757049594ed55d0eee2"
+    },
+    "cry-040": {
+      "src": "media/one-foot-v1/cry-040.webp",
+      "sha256": "2513a73a99b7d95590dc7d5921aede0a3e67d8744cbda10ba5a5e7192816aaee"
+    },
+    "cry-041": {
+      "src": "media/one-foot-v1/cry-041.webp",
+      "sha256": "b46625f339cb0bf0778d52ee5d9d40dc97de966a2577336947315359acf11e14"
+    },
+    "cry-042": {
+      "src": "media/one-foot-v1/cry-042.webp",
+      "sha256": "88937dc0a33cb8687ea0d80afa7e5a89f1a9c102de81a972e3314538f6e86487"
+    },
+    "cry-043": {
+      "src": "media/one-foot-v1/cry-043.webp",
+      "sha256": "6818a28cba3437e935fe78d1a6128d4ed68824959b27c3d47c6f20d1cfa50e7f"
+    },
+    "cry-044": {
+      "src": "media/one-foot-v1/cry-044.webp",
+      "sha256": "366f79ceb6035a948212e42e75239fc325dbb3e4922f19a29c8d072b9882b49b"
+    },
+    "cry-045": {
+      "src": "media/one-foot-v1/cry-045.webp",
+      "sha256": "aa62d0a7c26230c2cde94d8ff12947668725b0a05f388c7c472bcd664ac99733"
+    },
+    "cry-046": {
+      "src": "media/one-foot-v1/cry-046.webp",
+      "sha256": "a6fb788532c8efe68591c733ce5c6cd567773e6f6ee10d87960b7190f867c0fd"
+    },
+    "cry-047": {
+      "src": "media/one-foot-v1/cry-047.webp",
+      "sha256": "fd9962e8b1587e685f750f618b05a8cb5fa801cc5b33b9b857b34f2c697ab6a1"
+    },
+    "cry-048": {
+      "src": "media/one-foot-v1/cry-048.webp",
+      "sha256": "303f0e4e8d918c896d35431ceeef5e9d8294a7213c9c689752e616ffee694f48"
+    },
+    "cry-049": {
+      "src": "media/one-foot-v1/cry-049.webp",
+      "sha256": "f604ff58b7e82326ba12c2fbdf2c7e3299b6914b73be32fe2be1393f0259136d"
+    },
+    "cry-050": {
+      "src": "media/one-foot-v1/cry-050.webp",
+      "sha256": "f4ac218a23d7afd3c532ddca774f2b716aa38ac870963a311b52d39f33101a9a"
+    },
+    "cry-051": {
+      "src": "media/one-foot-v1/cry-051.webp",
+      "sha256": "b3ea47467daba6262a597c3158d9c6d4292bb531e0897af58cffa58a1558288d"
+    },
+    "cry-052": {
+      "src": "media/one-foot-v1/cry-052.webp",
+      "sha256": "a95dcf108b1f5f76b25eb0da8f20fbda45ee652a6e9e2502503e1bb7dbc7587f"
+    },
+    "cry-053": {
+      "src": "media/one-foot-v1/cry-053.webp",
+      "sha256": "c2749ac8604f52f9262e5f3ed4209b352698fee7628434ae6b900ef4c754f963"
+    },
+    "cry-054": {
+      "src": "media/one-foot-v1/cry-054.webp",
+      "sha256": "88e3333bda5025d3479eb86d1b75c7529a525e456f6a72129d4fbce6d6b52ddf"
+    },
+    "cry-055": {
+      "src": "media/one-foot-v1/cry-055.webp",
+      "sha256": "6dbac7ee858020d2b9022deac38241d8a198d70640291f99eef20482f2d9efd6"
+    },
+    "cry-056": {
+      "src": "media/one-foot-v1/cry-056.webp",
+      "sha256": "5436ad4e127cc59a0c379b14e52da78b39b05a2ed1f870bab0ec72e1e9874315"
+    },
+    "cry-057": {
+      "src": "media/one-foot-v1/cry-057.webp",
+      "sha256": "9dff3e1df259cc5e1be528a6d11297ed7bb3547bfcb167d434150ccdc79017cd"
+    },
+    "cry-058": {
+      "src": "media/one-foot-v1/cry-058.webp",
+      "sha256": "8091104f470f3befffa676430a267f445b919c3b80f661baed9c34223d9ad02d"
+    },
+    "cry-059": {
+      "src": "media/one-foot-v1/cry-059.webp",
+      "sha256": "159489a3c1eb75d4f01313ad64c35b1a1a41e1bba68d6ed471fa2bc06ae3fc59"
+    },
+    "cry-060": {
+      "src": "media/one-foot-v1/cry-060.webp",
+      "sha256": "5cffaeedddc9b49a61007a2650805af0a2b789498f9dd52af0d168e6191a71e0"
+    },
+    "cry-061": {
+      "src": "media/one-foot-v1/cry-061.webp",
+      "sha256": "948aec9889b56933602cdfd8a058a3374a13aeefb3485a1f3489b6856ec70cf4"
+    },
+    "cry-062": {
+      "src": "media/one-foot-v1/cry-062.webp",
+      "sha256": "b80cb8c92c645314c258ecc86b7f9d2f7039f97fc523727e7eb2acad35bf3136"
+    },
+    "cry-063": {
+      "src": "media/one-foot-v1/cry-063.webp",
+      "sha256": "2eab714d7ad5b1322f37878048428177163744b6ecb059b5edb2b2648edd19ac"
+    },
+    "cry-064": {
+      "src": "media/one-foot-v1/cry-064.webp",
+      "sha256": "0a135672c7f8e5c09e310a3d469e1c71c84d877e9c7e86b394135a5afe9737bb"
+    },
+    "cry-065": {
+      "src": "media/one-foot-v1/cry-065.webp",
+      "sha256": "fb65f9b0afaafe25c926f5097b5c591cd2688ddd4be55bfbca7a47c84663bef0"
+    },
+    "cry-066": {
+      "src": "media/one-foot-v1/cry-066.webp",
+      "sha256": "4b8d07327994eacfdf8039751185b290ecb1c9a507c4708b1868cd02e9aaf2c4"
+    },
+    "cry-067": {
+      "src": "media/one-foot-v1/cry-067.webp",
+      "sha256": "d581e076c3f1401baa52b324b0fac3be0c4a706f327bac4c5606500e84bd8ebb"
+    },
+    "cry-068": {
+      "src": "media/one-foot-v1/cry-068.webp",
+      "sha256": "db69a8179fa6a018dbce508c898b2c88c16fbda836825847e297a2116e63f095"
+    },
+    "cry-069": {
+      "src": "media/one-foot-v1/cry-069.webp",
+      "sha256": "ed7e5085a094fa6b895e093a27071e07ebe4e5f9ec2a444d224c2a862c854e9d"
+    },
+    "cry-070": {
+      "src": "media/one-foot-v1/cry-070.webp",
+      "sha256": "d1552de0bdd9ee509af99dbe9e83b9142f7a28b46ae408ab11a52d44b14ff476"
+    },
+    "cry-071": {
+      "src": "media/one-foot-v1/cry-071.webp",
+      "sha256": "86d0d61767f3a34f69c3876952538830b8ba16952e1cf6f1c19fc3af54b9861c"
+    },
+    "cry-072": {
+      "src": "media/one-foot-v1/cry-072.webp",
+      "sha256": "8407f3a88ee6f651cc4d0014e9c6c4669f3685a8a796d4e6be9eb40730a99c65"
+    },
+    "cry-073": {
+      "src": "media/one-foot-v1/cry-073.webp",
+      "sha256": "2a02c8550d5c8e576a8e2b60b1e0edc0cc961e8a05df1477901fd3a0095408b6"
+    },
+    "cry-074": {
+      "src": "media/one-foot-v1/cry-074.webp",
+      "sha256": "63ef7dd4ca69fcca44fd36145a548f8b8e15e50b96de2cb67813e3a1ccbab60b"
+    },
+    "cry-075": {
+      "src": "media/one-foot-v1/cry-075.webp",
+      "sha256": "729d1042925b8c089be739027b77e4aa150ec5b689fc4b62d8e6daebfe64baed"
+    },
+    "cry-076": {
+      "src": "media/one-foot-v1/cry-076.webp",
+      "sha256": "7717d9bd679ad3c14f060f03c6205511432c7aea969da3c8f86e63326b994539"
+    },
+    "cry-077": {
+      "src": "media/one-foot-v1/cry-077.webp",
+      "sha256": "a7388ad6d16d55e6abca457b06d3ec930d79e5ca46b2adf2ed2b033600f630ba"
+    },
+    "cry-078": {
+      "src": "media/one-foot-v1/cry-078.webp",
+      "sha256": "3497f884ea5e17880e6ba1dff831412f11ce202182d85844ecfdd23d286596c0"
+    },
+    "cry-079": {
+      "src": "media/one-foot-v1/cry-079.webp",
+      "sha256": "a3d7163b4534891ad2ee96494b395d989230b0df32a7499d7ce56034f488b42e"
+    },
+    "cry-080": {
+      "src": "media/one-foot-v1/cry-080.webp",
+      "sha256": "ee57d556a683ea3067b24a25009eab4a1c5055effc99108c3bd9c6b5bbc195d0"
+    },
+    "cry-081": {
+      "src": "media/one-foot-v1/cry-081.webp",
+      "sha256": "5f5cefb9fa209191c79581baa8378680ecc847e71dafc92a9fd658c7e0d27faf"
+    },
+    "cry-082": {
+      "src": "media/one-foot-v1/cry-082.webp",
+      "sha256": "12477938708a30520789b66585d94de09a2bc569a74b5091699b224a871a78d6"
+    },
+    "cry-083": {
+      "src": "media/one-foot-v1/cry-083.webp",
+      "sha256": "8bc93c8848a19c29ab1083c09a9fa982c59e798d392b007973f13cbf46121ed3"
+    },
+    "cry-084": {
+      "src": "media/one-foot-v1/cry-084.webp",
+      "sha256": "bacf924154268c48fcc64fe8ea1d5a6ba3d0e730389c47baca0e91dfabfddab8"
+    },
+    "cry-085": {
+      "src": "media/one-foot-v1/cry-085.webp",
+      "sha256": "da087d4fafa8527df34c3f2d0bc1ac56bca6479e0e1b45821fd1dcb086d81a36"
+    },
+    "cry-086": {
+      "src": "media/one-foot-v1/cry-086.webp",
+      "sha256": "a0e3a17294b6a4e1649165a8a996680597bbec7f4c9b9c289c17a9ca36175811"
+    },
+    "cry-087": {
+      "src": "media/one-foot-v1/cry-087.webp",
+      "sha256": "82330901b872145b39de6ac5372544b944f3e11e0deb11de6e2550747097ae8e"
+    },
+    "cry-088": {
+      "src": "media/one-foot-v1/cry-088.webp",
+      "sha256": "9931311890e02c4a54d7832f25e653c93b640cf0189573d90aba00857d24876d"
+    },
+    "cry-089": {
+      "src": "media/one-foot-v1/cry-089.webp",
+      "sha256": "a1b49bc515f47aeea3706371a34cf3675831c608cb99aa21f93cbc26c73c614e"
+    },
+    "cry-090": {
+      "src": "media/one-foot-v1/cry-090.webp",
+      "sha256": "900b5b2b7ddc645524f048c38b8a7ed645d2dcb7c05aa7c75582db138b11ee72"
+    },
+    "cry-091": {
+      "src": "media/one-foot-v1/cry-091.webp",
+      "sha256": "d4ff57276814c365fc902abdc1f88627bc885253f6087dd5072d901880b7fc09"
+    },
+    "cry-092": {
+      "src": "media/one-foot-v1/cry-092.webp",
+      "sha256": "ec42d56ed2fe478e978307425c8c2a385d8395b9583ad4a3d9be4c3275e980e0"
+    },
+    "cry-093": {
+      "src": "media/one-foot-v1/cry-093.webp",
+      "sha256": "b9b81e1ef8f0d8dacfd38893b225c43cc92aefc0a4eab6a7601332e39891cebc"
+    },
+    "cry-094": {
+      "src": "media/one-foot-v1/cry-094.webp",
+      "sha256": "13066dc94ea51b42c16cc8c4a219383b6c78052c14c3eff08ea72d427ff0d79f"
+    },
+    "cry-095": {
+      "src": "media/one-foot-v1/cry-095.webp",
+      "sha256": "4ebed38df5f047e2cf0061ba6a444c88cf75d29a126d72e24d7e7e4443471323"
+    },
+    "cry-096": {
+      "src": "media/one-foot-v1/cry-096.webp",
+      "sha256": "01bcbd6dcc1102c3570ce5bfd3753d7f1e81c8a12e3beb3e107146daf904d8ab"
+    },
+    "cry-097": {
+      "src": "media/one-foot-v1/cry-097.webp",
+      "sha256": "00612d935a6561ee247ca5239374d8cac0156876c1629c9545e4b171d5e2c93c"
+    },
+    "cry-098": {
+      "src": "media/one-foot-v1/cry-098.webp",
+      "sha256": "e3bbb02b581d0c9a24ed906bf70e35c970408d8bcdcb6204591d624851be36cc"
+    },
+    "cry-099": {
+      "src": "media/one-foot-v1/cry-099.webp",
+      "sha256": "51c0fb3a90b38c3e75b6cae65700f5073b4904767976583ab9f1f6c50913bd9e"
+    },
+    "cry-100": {
+      "src": "media/one-foot-v1/cry-100.webp",
+      "sha256": "d9225e436ed35d84e0c46fbfc492beebc6d533ce764bd71404b9e31c07da7c92"
+    },
+    "cry-101": {
+      "src": "media/one-foot-v1/cry-101.webp",
+      "sha256": "c6c1d84b92d99a9aec53475b7e478ef72bcbc8789a1abc4cd16ff78321eac7b3"
+    },
+    "cry-102": {
+      "src": "media/one-foot-v1/cry-102.webp",
+      "sha256": "57754c6116751d02fa0e5fc5f0d98ec9021ad46117dc7767c83b8eae3e1e54a8"
+    },
+    "cry-103": {
+      "src": "media/one-foot-v1/cry-103.webp",
+      "sha256": "eb3b0cf3ed2e5ccd236403853f258f860be0a2d54163219e25ccdd8b44493056"
+    },
+    "cry-104": {
+      "src": "media/one-foot-v1/cry-104.webp",
+      "sha256": "99d12a3bf73e990c515f0d936bffe58dc7985177104c61d5b5a9749b7645adbb"
+    },
+    "cry-105": {
+      "src": "media/one-foot-v1/cry-105.webp",
+      "sha256": "fcf46be722995b916aebdb630b9b20091586ac9cce3a85f75332a3bef1cdc8cb"
+    },
+    "cry-106": {
+      "src": "media/one-foot-v1/cry-106.webp",
+      "sha256": "35cd373d3f6daa7bdceb3ae27781df81a0ef80fe49c64f4cb29bd1ff5085fffd"
+    },
+    "cry-107": {
+      "src": "media/one-foot-v1/cry-107.webp",
+      "sha256": "41321fcecd1ddaee0acde272d091c8eea5d955e54a8267d72c0d50b0ac8cbf09"
+    },
+    "cry-108": {
+      "src": "media/one-foot-v1/cry-108.webp",
+      "sha256": "53b0bb4af3c0abe9d0c5ffdb51ade40a340ed58c1d2cc41cf2d5b63135ba28b7"
+    },
+    "cry-109": {
+      "src": "media/one-foot-v1/cry-109.webp",
+      "sha256": "b8cf59728c56bad35d25333a9387f96618dfe5c951c1b4474d6889a2512f0366"
+    },
+    "cry-110": {
+      "src": "media/one-foot-v1/cry-110.webp",
+      "sha256": "128261d478369b7a3aab75d1dce318b41fd3623fc56dbc821a859869b9aafe0c"
+    },
+    "cry-111": {
+      "src": "media/one-foot-v1/cry-111.webp",
+      "sha256": "54c9170f94d3d74d1121c20be0c24f8393ba58b6a915a6aeed230c2d017217e7"
+    },
+    "cry-112": {
+      "src": "media/one-foot-v1/cry-112.webp",
+      "sha256": "8b22c4caaba75b60a48d23137f4f440ec58f9b76c01a7ba347d14c52b780297b"
+    },
+    "cry-113": {
+      "src": "media/one-foot-v1/cry-113.webp",
+      "sha256": "467820f7ac4464bcdb1ea80db9ba9bf72bbbe33c42592765dbb7c19522b73e02"
+    },
+    "cry-114": {
+      "src": "media/one-foot-v1/cry-114.webp",
+      "sha256": "1d8ad530305c4019874723defb989191d208459098ab1b7a1f4c1d83a36c9d21"
+    },
+    "cry-115": {
+      "src": "media/one-foot-v1/cry-115.webp",
+      "sha256": "42d6006741dda7a8624678781a08db0691a5b1929cbc3a39470fb3dd7fd47f72"
+    },
+    "cry-116": {
+      "src": "media/one-foot-v1/cry-116.webp",
+      "sha256": "25f18c3df0203da78b8cdc208ec8d06d6035abe2e0f41218b3872999aacc52ff"
+    },
+    "cry-117": {
+      "src": "media/one-foot-v1/cry-117.webp",
+      "sha256": "b3f018c045d29b9f797e1147cb8edd0a83b064d9bc7c687803547bac119ede9b"
+    },
+    "cry-118": {
+      "src": "media/one-foot-v1/cry-118.webp",
+      "sha256": "e8022a3abc7ed952e2d61eb6b69c41f7aefed7a81d9aaf1f6b2d9a00b0dc5361"
+    },
+    "proud0": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 0,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud1": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 1,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud2": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 2,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud3": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 3,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud4": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 4,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud5": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 5,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud6": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 6,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud7": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 7,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud8": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 8,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud9": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 9,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud10": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 10,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud11": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 11,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud12": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 12,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud13": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 13,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud14": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 14,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud15": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 15,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "proud16": {
+      "src": "media/maro-game-proud-v2.webp",
+      "frame": 16,
+      "sha256": "b5d0b58d887392b0cc41e370d5d25c4e24098e434eff03e59c889b0c9e4aac77"
+    },
+    "rescue0": {
+      "src": "media/one-foot-rescue-v1/0.webp",
+      "sha256": "950600f522d98429a0feb4ca0b74db5211f290c578b7b1901385d793f669f338",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueA": {
+      "src": "media/one-foot-rescue-v1/A.webp",
+      "sha256": "63b5ad94378081bbaaa73367769734c2924ba757df3ff5fde063315551fc4beb",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueB": {
+      "src": "media/one-foot-rescue-v1/B.webp",
+      "sha256": "7945dccbf0e79082285ee1706fd93f56013e1c3aedcff37aa858aa3aa4d6f76f",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueB0": {
+      "src": "media/one-foot-rescue-v1/B0.webp",
+      "sha256": "e25bb56016356f40eae3ea0dc92d64bdc585e1064e6fcfc383703d79ad814b29",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueB1": {
+      "src": "media/one-foot-rescue-v1/B1.webp",
+      "sha256": "fcb8ad2dbd9a16b9fb9303651738fe22016d6219604f1deda4843fe6191cb49e",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueB2": {
+      "src": "media/one-foot-rescue-v1/B2.webp",
+      "sha256": "bf32430ec0095363c314730bc88432e5bcf4372e73c4e114f756ceb482fcb1ad",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueB3": {
+      "src": "media/one-foot-rescue-v1/B3.webp",
+      "sha256": "1b7a80653853529c34a6cb92470a237972e38aeef4455582e213b892e53d3316",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueC": {
+      "src": "media/one-foot-rescue-v1/C.webp",
+      "sha256": "c55d16ac7ae02be94ef7d870adecfbb70b78206e512a0c39a67e6df21fb29161",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueD": {
+      "src": "media/one-foot-rescue-v1/D.webp",
+      "sha256": "d8e61c0e0014431254705f917c496eeabc9ab8fe8e886033dd184114fa7948e0",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueE": {
+      "src": "media/one-foot-rescue-v1/E.webp",
+      "sha256": "399f5180bb8da72bf21dd68eeb6d8d84a27f6c9e3b3daf4326a8ab78d7b6da90",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueF": {
+      "src": "media/one-foot-rescue-v1/F.webp",
+      "sha256": "34a2fcd1f8b550246d8e37ee7fb0d5303a3d1d4234c0456061ee6e2c7bb50a74",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueG": {
+      "src": "media/one-foot-rescue-v1/G.webp",
+      "sha256": "d393718d9d6483f0fdd509b352d31facfdc77e4d8a4e0c65a47519e7789911ee",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueH": {
+      "src": "media/one-foot-rescue-v1/H.webp",
+      "sha256": "3c878c9ed6a065fb0914d62a5acaac62fdc7b2fca851fc79bf418fca2ada822d",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueI": {
+      "src": "media/one-foot-rescue-v1/I.webp",
+      "sha256": "438380d56f811b9062241f85fb4197c6f65ab9af62e4a07980079f953d929b16",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueJ": {
+      "src": "media/one-foot-rescue-v1/J.webp",
+      "sha256": "55a11258f32a1b8f7b4eb414a39a7c537a3cc44711dc53de71779d2ce75363ca",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueJ01": {
+      "src": "media/one-foot-rescue-v1/J01.webp",
+      "sha256": "9a2c381f83a6eea3f9d0b96f29033e012f7fbbb9ca19143889c70c9bf560427b",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueJ02": {
+      "src": "media/one-foot-rescue-v1/J02.webp",
+      "sha256": "ebf550d396cbb2d1f6dd8a626155837923c0bb366aab9fe42007d72ea46561c8",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueJ03": {
+      "src": "media/one-foot-rescue-v1/J03.webp",
+      "sha256": "42695dbed81898ba3f7257267152b9ef533e7b90e7c77820501c0b5fb03700f6",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueJ04": {
+      "src": "media/one-foot-rescue-v1/J04.webp",
+      "sha256": "173c933b2eb88a15ccbe721312c325c75185633158cb58ac9ceeda0e93b514fa",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueJ05": {
+      "src": "media/one-foot-rescue-v1/J05.webp",
+      "sha256": "57ff4e1590efef4d4b3c42baef2a1c1df77c2cfae166a093e509f1893bb493e1",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueJ06": {
+      "src": "media/one-foot-rescue-v1/J06.webp",
+      "sha256": "d864c29aa989772ed3d773768a4c0b36eea8eff0fd74e59e6d6e4f4480300568",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueJ07": {
+      "src": "media/one-foot-rescue-v1/J07.webp",
+      "sha256": "5f9e8e4907a68af76cc98fb6ed6caf8465c64ab10d54f8d06b1e675998b0c445",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueJ08": {
+      "src": "media/one-foot-rescue-v1/J08.webp",
+      "sha256": "019449de743a7e6b469f949fdcfb07e22f3e68bc758eb3757fdadb7b5a80a7ad",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueJ12": {
+      "src": "media/one-foot-rescue-v1/J12.webp",
+      "sha256": "0b48b39fe7e24934c8f39a3cbe08ba188e2e34846d0ad15c95a198ece331cccd",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueJ13": {
+      "src": "media/one-foot-rescue-v1/J13.webp",
+      "sha256": "8fa84f2a67134f502b8f6ddf3a29b1a0061321399908613f7623e25d256fe648",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueJ14": {
+      "src": "media/one-foot-rescue-v1/J14.webp",
+      "sha256": "f26482ef17fdfe1ab5bec9459906e0cb0eece7eb6734c596bddd912293d6a17b",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueJ16": {
+      "src": "media/one-foot-rescue-v1/J16.webp",
+      "sha256": "040b5e9d1cf8162c2393e6f4980b89898924c50bac85197ff50e683d64a21ca0",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueJ17": {
+      "src": "media/one-foot-rescue-v1/J17.webp",
+      "sha256": "2fc648fafa1cd68098623652c69c2dc6a60a1fbc244cc6972f377f76f73d4f86",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueJ18": {
+      "src": "media/one-foot-rescue-v1/J18.webp",
+      "sha256": "81ccafc1fdd17c32b5dbaf20960ad3628e875bb3813fc62619a9e62fa95fc738",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueK": {
+      "src": "media/one-foot-rescue-v1/K.webp",
+      "sha256": "15d04cfa7765ddc5172ef1e22cfb8c28641ba57654d01ed1e946d689f6b2580a",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueL": {
+      "src": "media/one-foot-rescue-v1/L.webp",
+      "sha256": "89cfb8c332137619f58e28cb4631fd8ac2b753d8ba5c08b18a02d6c03aeb27d3",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueM": {
+      "src": "media/one-foot-rescue-v1/M.webp",
+      "sha256": "6e637c742a1758d4250be146f1ad3607f6363e792248d88b2e40597a60d5d75c",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueN": {
+      "src": "media/one-foot-rescue-v1/N.webp",
+      "sha256": "3deff8331da39527e51a13e219e30944e63447053649420e86a2a8e85b199900",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueO": {
+      "src": "media/one-foot-rescue-v1/O.webp",
+      "sha256": "58e1bcc9a686e9a9a2e04de0e2fdba31fffc9891dda5b86ca9712a977e8496c4",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueU1": {
+      "src": "media/one-foot-rescue-v1/U1.webp",
+      "sha256": "f02fbcc1fad50189c4567806fa3103a4c9b7978ee84f5249128f4f700027003f",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueU2": {
+      "src": "media/one-foot-rescue-v1/U2.webp",
+      "sha256": "aeae3f7f795441dd88c116598b2f135ecc03893350358ca1ecc2080b0cc8485b",
+      "canvas": [
+        768,
+        560
+      ]
+    },
+    "rescueU3": {
+      "src": "media/one-foot-rescue-v1/U3.webp",
+      "sha256": "90109a51a6a9cbf460f3aae748ccca7bd10ef23fd87c8b6dd1c25b45586eea2c",
+      "canvas": [
+        768,
+        560
+      ]
+    }
+  },
+  "no_body_edits": false,
+  "forward_only_after_b08": true,
+  "tear_source_version": "v9",
+  "color_reference": "media/ef47ebeea34d291215f16ad4.webp",
+  "fur_target_rgb": [
+    254,
+    244,
+    239
+  ],
+  "color_correction_only": true,
+  "random_wobble_probability": 0.55,
+  "complete_ottotto_round_trip_preserved": true,
+  "proud": {
+    "open": [
+      [
+        0,
+        600
+      ],
+      [
+        1,
+        120
+      ],
+      [
+        2,
+        130
+      ],
+      [
+        3,
+        140
+      ],
+      [
+        4,
+        150
+      ],
+      [
+        5,
+        160
+      ],
+      [
+        6,
+        180
+      ],
+      [
+        7,
+        950
+      ],
+      [
+        8,
+        100
+      ],
+      [
+        9,
+        140
+      ],
+      [
+        10,
+        160
+      ],
+      [
+        7,
+        900
+      ],
+      [
+        8,
+        100
+      ],
+      [
+        9,
+        140
+      ],
+      [
+        10,
+        160
+      ],
+      [
+        7,
+        650
+      ],
+      [
+        6,
+        180
+      ],
+      [
+        5,
+        160
+      ],
+      [
+        4,
+        150
+      ],
+      [
+        3,
+        140
+      ],
+      [
+        2,
+        130
+      ],
+      [
+        1,
+        120
+      ],
+      [
+        0,
+        600
+      ]
+    ],
+    "closed": [
+      [
+        0,
+        600
+      ],
+      [
+        1,
+        120
+      ],
+      [
+        2,
+        130
+      ],
+      [
+        3,
+        140
+      ],
+      [
+        4,
+        150
+      ],
+      [
+        5,
+        160
+      ],
+      [
+        6,
+        180
+      ],
+      [
+        7,
+        380
+      ],
+      [
+        16,
+        70
+      ],
+      [
+        11,
+        70
+      ],
+      [
+        12,
+        400
+      ],
+      [
+        13,
+        100
+      ],
+      [
+        14,
+        140
+      ],
+      [
+        15,
+        160
+      ],
+      [
+        12,
+        900
+      ],
+      [
+        13,
+        100
+      ],
+      [
+        14,
+        140
+      ],
+      [
+        15,
+        160
+      ],
+      [
+        12,
+        400
+      ],
+      [
+        11,
+        70
+      ],
+      [
+        16,
+        70
+      ],
+      [
+        7,
+        140
+      ],
+      [
+        6,
+        180
+      ],
+      [
+        5,
+        160
+      ],
+      [
+        4,
+        150
+      ],
+      [
+        3,
+        140
+      ],
+      [
+        2,
+        130
+      ],
+      [
+        1,
+        120
+      ],
+      [
+        0,
+        600
+      ]
+    ]
+  },
+  "color_revision": "v4-regenerated-neutral-fur",
+  "regenerated_color_reference_sha256": "2de415225ae72d07fc135bb0d99299939be4d4861d94c60d66f273a0f414c661",
+  "rescue": {
+    "version": 1,
+    "sourceVersion": "approved-v15",
+    "wipeRoundTrips": 3,
+    "bowCounts": [
+      1,
+      2
+    ],
+    "outcomes": [
+      "jump",
+      "banzai",
+      "banzai-jump",
+      "jump-banzai",
+      "banzai-banzai",
+      "jump-jump"
+    ],
+    "prefix": [
+      [
+        "rescue0",
+        650
+      ],
+      [
+        "rescueA",
+        300
+      ],
+      [
+        "rescueB",
+        180
+      ],
+      [
+        "rescueC",
+        120
+      ],
+      [
+        "rescueD",
+        140
+      ],
+      [
+        "rescueE",
+        120
+      ],
+      [
+        "rescueF",
+        140
+      ],
+      [
+        "rescueG",
+        120
+      ],
+      [
+        "rescueF",
+        140
+      ],
+      [
+        "rescueG",
+        120
+      ],
+      [
+        "rescueH",
+        180
+      ],
+      [
+        "rescueI",
+        280
+      ]
+    ],
+    "bow": [
+      [
+        "rescueJ",
+        330
+      ],
+      [
+        "rescueK",
+        360
+      ]
+    ],
+    "postBow": {
+      "jump": [
+        [
+          "rescueJ16",
+          150
+        ],
+        [
+          "rescueJ18",
+          130
+        ],
+        [
+          "rescueJ01",
+          120
+        ],
+        [
+          "rescueJ02",
+          150
+        ],
+        [
+          "rescueJ03",
+          90
+        ],
+        [
+          "rescueJ04",
+          90
+        ],
+        [
+          "rescueJ05",
+          90
+        ],
+        [
+          "rescueJ06",
+          120
+        ],
+        [
+          "rescueJ07",
+          90
+        ],
+        [
+          "rescueJ08",
+          100
+        ],
+        [
+          "rescueJ13",
+          100
+        ],
+        [
+          "rescueJ14",
+          130
+        ],
+        [
+          "rescueJ12",
+          140
+        ],
+        [
+          "rescueJ17",
+          180
+        ],
+        [
+          "rescueU1",
+          130
+        ],
+        [
+          "rescueU2",
+          140
+        ],
+        [
+          "rescueU3",
+          180
+        ],
+        [
+          "rescue0",
+          1400
+        ]
+      ],
+      "banzai": [
+        [
+          "rescueL",
+          230
+        ],
+        [
+          "rescueM",
+          230
+        ],
+        [
+          "rescueN",
+          290
+        ],
+        [
+          "rescueO",
+          230
+        ],
+        [
+          "rescueB0",
+          100
+        ],
+        [
+          "rescueB1",
+          120
+        ],
+        [
+          "rescueB2",
+          130
+        ],
+        [
+          "rescueB3",
+          160
+        ],
+        [
+          "rescue0",
+          1400
+        ]
+      ],
+      "banzai-jump": [
+        [
+          "rescueL",
+          230
+        ],
+        [
+          "rescueM",
+          230
+        ],
+        [
+          "rescueN",
+          290
+        ],
+        [
+          "rescueO",
+          230
+        ],
+        [
+          "rescueJ18",
+          130
+        ],
+        [
+          "rescueJ01",
+          120
+        ],
+        [
+          "rescueJ02",
+          150
+        ],
+        [
+          "rescueJ03",
+          90
+        ],
+        [
+          "rescueJ04",
+          90
+        ],
+        [
+          "rescueJ05",
+          90
+        ],
+        [
+          "rescueJ06",
+          120
+        ],
+        [
+          "rescueJ07",
+          90
+        ],
+        [
+          "rescueJ08",
+          100
+        ],
+        [
+          "rescueJ13",
+          100
+        ],
+        [
+          "rescueJ14",
+          130
+        ],
+        [
+          "rescueJ12",
+          140
+        ],
+        [
+          "rescueJ17",
+          180
+        ],
+        [
+          "rescueU1",
+          130
+        ],
+        [
+          "rescueU2",
+          140
+        ],
+        [
+          "rescueU3",
+          180
+        ],
+        [
+          "rescue0",
+          1400
+        ]
+      ],
+      "jump-banzai": [
+        [
+          "rescueJ16",
+          150
+        ],
+        [
+          "rescueJ18",
+          130
+        ],
+        [
+          "rescueJ01",
+          120
+        ],
+        [
+          "rescueJ02",
+          150
+        ],
+        [
+          "rescueJ03",
+          90
+        ],
+        [
+          "rescueJ04",
+          90
+        ],
+        [
+          "rescueJ05",
+          90
+        ],
+        [
+          "rescueJ06",
+          120
+        ],
+        [
+          "rescueJ07",
+          90
+        ],
+        [
+          "rescueJ08",
+          100
+        ],
+        [
+          "rescueJ13",
+          100
+        ],
+        [
+          "rescueJ14",
+          130
+        ],
+        [
+          "rescueJ12",
+          140
+        ],
+        [
+          "rescueJ17",
+          180
+        ],
+        [
+          "rescueL",
+          230
+        ],
+        [
+          "rescueM",
+          230
+        ],
+        [
+          "rescueN",
+          290
+        ],
+        [
+          "rescueO",
+          230
+        ],
+        [
+          "rescueB0",
+          100
+        ],
+        [
+          "rescueB1",
+          120
+        ],
+        [
+          "rescueB2",
+          130
+        ],
+        [
+          "rescueB3",
+          160
+        ],
+        [
+          "rescue0",
+          1400
+        ]
+      ],
+      "banzai-banzai": [
+        [
+          "rescueL",
+          230
+        ],
+        [
+          "rescueM",
+          230
+        ],
+        [
+          "rescueN",
+          230
+        ],
+        [
+          "rescueO",
+          180
+        ],
+        [
+          "rescueM",
+          230
+        ],
+        [
+          "rescueN",
+          290
+        ],
+        [
+          "rescueO",
+          230
+        ],
+        [
+          "rescueB0",
+          100
+        ],
+        [
+          "rescueB1",
+          120
+        ],
+        [
+          "rescueB2",
+          130
+        ],
+        [
+          "rescueB3",
+          160
+        ],
+        [
+          "rescue0",
+          1400
+        ]
+      ],
+      "jump-jump": [
+        [
+          "rescueJ16",
+          150
+        ],
+        [
+          "rescueJ18",
+          130
+        ],
+        [
+          "rescueJ01",
+          120
+        ],
+        [
+          "rescueJ02",
+          150
+        ],
+        [
+          "rescueJ03",
+          90
+        ],
+        [
+          "rescueJ04",
+          90
+        ],
+        [
+          "rescueJ05",
+          90
+        ],
+        [
+          "rescueJ06",
+          120
+        ],
+        [
+          "rescueJ07",
+          90
+        ],
+        [
+          "rescueJ08",
+          100
+        ],
+        [
+          "rescueJ13",
+          100
+        ],
+        [
+          "rescueJ14",
+          130
+        ],
+        [
+          "rescueJ02",
+          140
+        ],
+        [
+          "rescueJ03",
+          90
+        ],
+        [
+          "rescueJ04",
+          90
+        ],
+        [
+          "rescueJ05",
+          90
+        ],
+        [
+          "rescueJ06",
+          120
+        ],
+        [
+          "rescueJ07",
+          90
+        ],
+        [
+          "rescueJ08",
+          100
+        ],
+        [
+          "rescueJ13",
+          100
+        ],
+        [
+          "rescueJ14",
+          130
+        ],
+        [
+          "rescueJ12",
+          140
+        ],
+        [
+          "rescueJ17",
+          180
+        ],
+        [
+          "rescueU1",
+          130
+        ],
+        [
+          "rescueU2",
+          140
+        ],
+        [
+          "rescueU3",
+          180
+        ],
+        [
+          "rescue0",
+          1400
+        ]
+      ]
+    }
+  },
+  "appearance_revision": "standing-feathery-fur-v2",
+  "body_appearance_only_regenerated": true,
+  "prone_body_fixed_across_expression_frames": true
+}

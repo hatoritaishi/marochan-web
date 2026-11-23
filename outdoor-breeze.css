@@ -1,0 +1,4 @@
+.maro-breeze-portrait{position:absolute;pointer-events:none;z-index:4}
+.maro-breeze-portrait[hidden]{display:none}
+body.maro-breeze-active #creature,body.maro-breeze-active #creature *{visibility:hidden!important}
+body.maro-breeze-active #petEffectLayer{display:none!important}

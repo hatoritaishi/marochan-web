@@ -1,0 +1,389 @@
+/* Shared visual rhythm for the room, settings, conversation and memories. */
+:root {
+  --ui-paper: #fffaf6;
+  --ui-white: #ffffff;
+  --ui-ink: #76594e;
+  --ui-muted: #8a7268;
+  --ui-line: #e6d8d2;
+  --ui-rose: #f3dae2;
+  --ui-accent: #925d70;
+  --ui-radius: 16px;
+  --ui-controls-height: 168px;
+  --ui-snack-size: 88px;
+  --ui-snack-bar-width: min(340px, calc((100vw - 4px) / 1.1));
+  --ui-chat-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 11.5a8 8 0 0 1-8 8H5l-3 2v-10a9 9 0 0 1 18 0Z'/%3E%3Cpath d='M7 10h8M7 14h5'/%3E%3C/svg%3E");
+  --ui-heart-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.8 5.6a5.4 5.4 0 0 0-7.6 0L12 6.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6L12 22l8.8-8.8a5.4 5.4 0 0 0 0-7.6Z'/%3E%3C/svg%3E");
+  --ui-moon-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linejoin='round'%3E%3Cpath d='M20.5 14.4A9 9 0 0 1 9.6 3.5a9 9 0 1 0 10.9 10.9Z'/%3E%3C/svg%3E");
+  --ui-sun-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5'/%3E%3C/svg%3E");
+  --ui-snack-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 10h16v11H4zM4 15c2 2 3-2 5 0s3-2 5 0 3-2 6 0M8 10V6m8 4V6M8 3v1m8-1v1M2 21h20'/%3E%3C/svg%3E");
+  --ui-breath-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round'%3E%3Cpath d='M3 8h10a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h5a3 3 0 1 1-3 3'/%3E%3C/svg%3E");
+  --ui-book-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 5C8 2 4 3 2 4v15c4-2 7-1 10 1 3-2 6-3 10-1V4c-2-1-6-2-10 1Zm0 0v15'/%3E%3C/svg%3E");
+  --ui-settings-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round'%3E%3Cpath d='M4 3v18M12 3v18M20 3v18'/%3E%3Cpath d='M1 8h6M9 16h6M17 7h6' stroke-width='4'/%3E%3C/svg%3E");
+}
+
+body {
+  background: var(--ui-paper);
+  color: var(--ui-ink);
+  padding: max(12px, env(safe-area-inset-top)) 12px max(12px, env(safe-area-inset-bottom));
+}
+.wrap > header {
+  gap: 12px;
+  min-height: 64px;
+  padding: 0 0 12px;
+  margin-bottom: 12px;
+  border-bottom-color: var(--ui-line);
+}
+/* Use the free header width while preserving the original header height. */
+.wrap > header .title-img {
+  flex: 1 1 0;
+  width: auto;
+  max-width: none;
+  height: clamp(56px, 11.2vw, 59.5px);
+  object-fit: contain;
+  object-position: left center;
+}
+.wrap > header .toggles { flex: 0 0 auto; gap: 8px; }
+.wrap > header .toggles #cSnackDex,
+.wrap > header .toggles #tSound {
+  flex: 0 0 auto;
+  width: 76px;
+  height: 56px;
+  min-height: 48px;
+  padding: 6px;
+  gap: 4px;
+  flex-direction: column;
+  border: 1px solid var(--ui-line);
+  border-radius: 14px;
+  background: var(--ui-white);
+  color: var(--ui-ink);
+  font: 500 12px/1.3 'Zen Maru Gothic', sans-serif;
+  filter: none;
+  box-shadow: none;
+}
+.wrap > header .toggles #cSnackDex img,
+.wrap > header .toggles #tSound img { display: none; }
+.wrap > header .toggles #tSound > span { position: static; inset: auto; font: inherit; }
+#cSnackDex::before, #tSound::before, .action-row .cute-action-button::before {
+  content: '';
+  display: block;
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  background: currentColor;
+  -webkit-mask: var(--ui-icon) center / contain no-repeat;
+  mask: var(--ui-icon) center / contain no-repeat;
+}
+#cSnackDex { --ui-icon: var(--ui-book-icon); }
+#tSound { --ui-icon: var(--ui-settings-icon); }
+.maro-memory-badge { right: -4px; top: -5px; }
+body .foot { margin: 0 0 12px; font-size: 13px !important; line-height: 1.6 !important; color: var(--ui-muted); }
+.stage { border: 1px solid var(--ui-line); border-radius: 24px; box-shadow: none; }
+.chips {
+  --ui-snack-box-space: 52px; /* 44px BOX button + 8px top margin. */
+  --ui-snack-dock-height: calc(var(--ui-controls-height) + var(--ui-snack-box-space));
+  --ui-snack-bar-height: min(calc(var(--ui-snack-bar-width) / 1.5), var(--ui-snack-dock-height));
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  height: var(--ui-controls-height);
+  gap: 10px;
+  margin-top: 14px;
+}
+.chips > .action-row { grid-area: 1 / 1; }
+.chips > .action-row2 { grid-row: 2; }
+.chips > .action-row2.onedari-only,
+body.one-foot-active .chips > .action-row2 { grid-row: 1 / 3; align-self: center; min-height: 74px; }
+body.one-foot-active .chips > .action-row:not(.action-row2) { display: none !important; }
+.chips > #breathControls { grid-area: 1 / 1 / 3; align-self: center; justify-self: center; }
+.action-row { gap: 8px; align-items: stretch; }
+.action-row .cute-action-button {
+  position: relative;
+  display: block;
+  flex: 1 1 0;
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  min-height: 58px;
+  padding: 0;
+  border: 0;
+  border-radius: 30px;
+  background: transparent;
+  box-shadow: none;
+  filter: drop-shadow(0 3px 2px #bc7c6920);
+  transition: transform .16s ease, filter .16s ease, opacity .25s ease;
+  touch-action: manipulation;
+}
+.action-row .cute-action-button img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.action-row .cute-action-button::before,
+.action-row .cute-action-button::after { content: none; }
+#cPet.cute-action-button { aspect-ratio: auto; background: transparent; border: 0; }
+/* The original sleep art has transparent headroom. Fit the painted cloud into
+   the same fixed slot without cropping its bow or changing the room height. */
+.action-row #cNap img { height: 128%; top: -14%; }
+.action-row .cute-action-button:active { transform: translateY(2px) scale(.96); filter: drop-shadow(0 1px 1px #bc7c6920); }
+.action-row .cute-action-button:focus-visible { outline: 3px solid #bc728e; outline-offset: 2px; }
+@media (hover: hover) {
+  .action-row .cute-action-button:not(.nap-gone):not(:disabled):hover { transform: translateY(-2px); filter: drop-shadow(0 5px 3px #bc7c6930); }
+}
+.action-row.onedari-only #cSnackBig,
+.action-row #cHelpMaro { flex: 0 1 310px; max-width: 100%; height: 150px; background: transparent; }
+#cHelpMaro:not([hidden]) { animation: onedariFadeIn .25s ease; }
+/* The WebP artwork belongs to the same cream cloud and ribbon button set. */
+.maro-meta.snack-box-tools { display: flex; margin-top: 8px; gap: 0; }
+.snack-box-tools > span { display: none; }
+#cSnackBox {
+  position: relative;
+  display: block;
+  width: min(154px, 76vw);
+  height: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 30px;
+  background: transparent;
+  box-shadow: none;
+  filter: drop-shadow(0 3px 2px #bc7c6920);
+  transition: transform .16s ease, filter .16s ease;
+  touch-action: manipulation;
+}
+#cSnackBox > img { display: block; width: 100%; height: 100%; object-fit: contain; pointer-events: none; }
+#snackBoxCount {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  margin: 0;
+  padding: 1px 5px;
+  border: 2px solid #fffaf6;
+  border-radius: 999px;
+  background: #f9dae5;
+  color: #8c5268;
+  font: 700 10px/1.4 'Zen Maru Gothic', sans-serif;
+  box-shadow: 0 2px 3px #c5899a33;
+}
+#cSnackBox:active { transform: translateY(2px) scale(.97); filter: drop-shadow(0 1px 1px #bc7c6920); }
+
+.snack-box-dialog {
+  border: 3px solid #efc3cc;
+  border-radius: 29px;
+  background: radial-gradient(circle at 6px 6px, #eccfbe35 1px, transparent 1.5px) 0 0 / 16px 16px, #fffbf5;
+  box-shadow: 0 18px 60px #8c536333, inset 0 0 0 3px #fff;
+  scrollbar-color: #e9b9c7 #fff7f1;
+}
+.snack-box-dialog::backdrop { background: #77545d66; }
+.snack-box-top {
+  padding: 15px 16px;
+  border-bottom: 2px dashed #e8bcc6;
+  background: linear-gradient(115deg, #fff4ec, #ffe9ef 65%, #fff4e6);
+}
+.snack-box-top > div { min-width: 0; }
+.snack-box-top p { color: #96736c; font-size: 10px; }
+.snack-box-top h2 { margin: 2px 0 0; line-height: 0; }
+.snack-box-top h2 img { display: block; width: min(212px, 100%); height: auto; }
+.snack-box-top button, .snack-box-bottom button {
+  border: 1px solid #e3aebd;
+  border-radius: 18px;
+  background: linear-gradient(#fffefb, #ffedf1);
+  color: #895466;
+  box-shadow: inset 0 0 0 2px #ffffffa6, 0 3px 0 #edc6ce;
+}
+.snack-box-top button { padding: 8px 12px; flex-shrink: 0; font-size: 12px; }
+.snack-box-info strong { border-radius: 999px; padding: 5px 10px; background: #fff0e7; color: #956e57; font-size: 13px; }
+.snack-box-info span { font-size: 10px; }
+.snack-box-status { color: #89685e; }
+.snack-box-grid { gap: 15px 12px; }
+.snack-box-card {
+  --box-card-line: #eac8b7;
+  border: 2px solid var(--box-card-line);
+  border-radius: 25px;
+  padding: 12px 8px;
+  background: linear-gradient(#fffefa, #fff5eb);
+  box-shadow: inset 0 0 0 3px #ffffffba, 0 4px 0 #ebd5c655;
+}
+.snack-box-card::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border: 1px dashed var(--box-card-line);
+  border-radius: 19px;
+  pointer-events: none;
+}
+.snack-box-card img { filter: drop-shadow(0 3px 2px #b5836c15); }
+.snack-box-card strong { color: #855b58; }
+.snack-box-quantity {
+  z-index: 1;
+  top: 8px;
+  right: 8px;
+  background: #fffaf5;
+  border-color: var(--box-card-line);
+  color: #915d70;
+  box-shadow: 0 2px 0 #e9cad455;
+}
+.snack-box-rank { color: #957164; }
+.snack-box-action { width: auto; min-width: 88%; border: 1px solid #eac0cc; border-radius: 999px; background: #fff0f4; color: #945d73; font-weight: 700; }
+.snack-box-card.rank-rare { --box-card-line: #b8d7e6; background: linear-gradient(#fffefd, #edf8ff); }
+.snack-box-card.rank-srare { --box-card-line: #d4bfdf; background: linear-gradient(#fffefd, #f7edff); }
+.snack-box-card.rank-ssrare { --box-card-line: #e3cc8e; background: linear-gradient(#fffefd, #fff4cf); }
+.snack-box-card.rank-urare { --box-card-line: #e0b7d0; background: linear-gradient(135deg, #fff0f4, #fffce0, #e9faff, #f7eeff); }
+.snack-box-card:active { transform: translateY(2px); box-shadow: inset 0 0 0 3px #ffffffba, 0 2px 0 #ebd5c655; }
+.snack-box-empty::before { content: ''; display: block; width: 190px; height: 68px; margin: 0 auto 12px; background: url('media/room-snack-box-v1.webp') center / contain no-repeat; }
+.snack-box-bottom { border-top: 2px dashed #e8c3cc; background: #fff6ee; }
+.snack-box-bottom button { background: linear-gradient(#fffefa, #ffe9ef); }
+.snack-box-dialog button:disabled { filter: none; }
+@media (max-width: 350px) {
+  .snack-box-top { padding-inline: 12px; gap: 6px; }
+  .snack-box-top p { font-size: 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .action-row .cute-action-button, #cSnackBox { transition: opacity .25s ease; }
+}
+
+/* Keep the room fixed: fit the bars into the existing actions + BOX space.
+   Shallow windows use a wider, shorter frame while snack art stays square.
+   Clip decorative particles locally so they cannot widen the WebView page. */
+.chips:has(> #snackBar:not([hidden]), > #stealBar:not([hidden])) {
+  height: var(--ui-snack-dock-height);
+}
+.chips:has(> #snackBar:not([hidden]), > #stealBar:not([hidden])) + .snack-box-tools { display: none; }
+.chips > #snackBar, .chips > #stealBar {
+  grid-area: 1 / 1 / 3;
+  align-self: center;
+  justify-self: center;
+  width: var(--ui-snack-bar-width);
+  max-width: none;
+  height: var(--ui-snack-bar-height);
+  aspect-ratio: auto;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.chips > #snackBar::before, .chips > #stealBar::before { content: none; }
+#snackBar > img, #stealBar > img { display: block; left: -5%; width: 110%; }
+#snackFxLayer, #stealFxLayer { overflow: hidden; }
+#snackSlot0 { left: 17.8%; }
+#snackSlot2 { left: 82.4%; }
+.chips .snack-slot {
+  top: 50.2%;
+  width: min(28.64%, calc(var(--ui-snack-bar-height) * .4296));
+  height: auto;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+}
+.chips .snack-slot img { object-fit: contain; }
+.chips .snack-slot:active { transform: translate(-50%, -50%) scale(.96); }
+#snackClose, #stealClose {
+  display: block;
+  left: 50%;
+  top: auto;
+  bottom: 0;
+  width: 26.5%;
+  height: 44px;
+  min-width: 44px;
+  padding: 0;
+  transform: translateX(-50%);
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: none;
+}
+#snackClose img, #stealClose img {
+  position: absolute;
+  left: 0;
+  top: calc(44px - var(--ui-snack-bar-height) * .1465);
+  display: block;
+  width: 100%;
+  height: calc(var(--ui-snack-bar-height) * .1426);
+  object-fit: contain;
+}
+#snackClose::before, #stealClose::before, #snackClose::after, #stealClose::after { content: none; }
+#snackClose:disabled, #stealClose:disabled { opacity: .45; }
+
+/* A stable title bar and clearly separated settings rows. */
+.maro-sound-dialog {
+  width: min(420px, calc(100vw - 24px));
+  max-height: calc(100dvh - 32px);
+  padding: 0;
+  border: 1px solid var(--ui-line);
+  border-radius: 24px;
+  background: var(--ui-paper);
+  color: var(--ui-ink);
+  box-shadow: 0 18px 56px #46332c26;
+  overscroll-behavior: contain;
+}
+.sound-heading { position: sticky; top: 0; z-index: 2; gap: 10px; padding: 14px 16px; background: var(--ui-paper); border-bottom: 1px solid var(--ui-line); }
+.sound-heading h2 { font-size: 20px; }
+.sound-heading .sound-round, .sound-round { width: 44px; height: 44px; min-width: 44px; border-radius: 12px; background: var(--ui-white); border-color: var(--ui-line); box-shadow: none; }
+.sound-note { color: var(--ui-accent); font-size: 22px; }
+#settingsMenu, #settingsSoundPage { padding: 0 16px 20px; }
+.maro-sound-dialog .sound-caption { margin: 16px 0; color: var(--ui-muted); font-size: 13px; text-align: left; line-height: 1.6; }
+.settings-menu-item { min-height: 80px; gap: 12px; padding: 14px; margin: 10px 0 0; border-radius: 16px; border-color: var(--ui-line); background: var(--ui-white); color: var(--ui-ink); box-shadow: none; }
+.settings-menu-item > span:nth-child(2) { min-width: 0; flex: 1; }
+.settings-menu-item strong { font-size: 16px; line-height: 1.5; }
+.settings-menu-item small { margin-top: 3px; color: var(--ui-muted); font-size: 13px; line-height: 1.5; }
+.settings-music-icon { width: 36px; height: 36px; border-radius: 12px; background: #f8eef1; color: var(--ui-accent); font-size: 22px; }
+.settings-menu-item > span:last-child { color: #a28b81; font-size: 22px; }
+.maro-sound-dialog .sound-channel, .sound-music-picker { padding: 16px; margin-bottom: 12px; border-radius: 16px; background: var(--ui-white); border-color: var(--ui-line); box-shadow: none; }
+.sound-row h3, .sound-music-picker h3 { font-size: 16px; }
+.sound-row div > span, .sound-help, .music-mode-help, .music-current { font-size: 13px; color: var(--ui-muted); line-height: 1.6; }
+.sound-mute, .sound-preview { min-height: 44px; border-radius: 12px; font-size: 14px; color: var(--ui-ink); background: var(--ui-paper); border-color: var(--ui-line); }
+.music-modes { background: #f5eeea; border-radius: 14px; }
+.music-modes button { min-height: 44px; border-radius: 10px; }
+.music-modes button[aria-pressed=true], .music-tracks button[aria-pressed=true] { background: var(--ui-rose); border-color: #dba9bb; color: #764757; box-shadow: none; }
+.music-tracks button { min-height: 70px; border-radius: 12px; background: var(--ui-paper); border-color: var(--ui-line); }
+
+/* Conversation layout is defined alongside its composer in index.html. */
+
+/* Memories keep their illustrations while reducing competing decoration. */
+.maro-memories-shell { border: 1px solid var(--ui-line); border-radius: 24px; background: var(--ui-paper); }
+.maro-memories-header { margin: 0; padding: 16px 20px; background: var(--ui-paper); border-color: var(--ui-line); }
+.maro-memories-header h2 { color: var(--ui-ink); font-size: 22px; }
+.maro-memories-header button, .maro-memory-back, .maro-memory-retry, .maro-memory-text-size { min-height: 44px; border-radius: 12px; background: var(--ui-white); border-color: var(--ui-line); box-shadow: none; }
+.maro-memories-intro { margin: 0 0 20px; color: var(--ui-muted); font-size: 14px; }
+.maro-memories-choices { gap: 12px; }
+.maro-memory-choice { flex-direction: row; justify-content: flex-start; gap: 16px; min-height: 96px; padding: 18px 20px; border: 1px solid var(--ui-line); border-radius: 16px; background: var(--ui-white); box-shadow: none; font-size: 17px !important; }
+.maro-memory-choice::before { font-size: 30px; }
+.maro-memory-choice:active { transform: translateY(1px); box-shadow: none; }
+.maro-memory-entry { padding: 16px; border-color: var(--ui-line); background: var(--ui-white); box-shadow: none; }
+.snack-dex-close { min-height: 44px; border-radius: 12px; box-shadow: none; }
+
+@media (max-width: 600px) {
+  .maro-memories-shell { border: 0; border-radius: 0; }
+  .maro-memories-header { padding: max(12px, env(safe-area-inset-top)) 16px 12px; }
+}
+@media (max-width: 350px) {
+  .wrap > header .toggles #cSnackDex, .wrap > header .toggles #tSound { width: 66px; }
+  .action-row .cute-action-button { font-size: 15px; gap: 7px; }
+}
+@media (max-width: 480px) {
+  :root { --ui-snack-bar-width: min(315px, calc((100vw - 4px) / 1.1)); }
+}
+/* The app sets this from visualViewport, which may be shorter than CSS vh. */
+body.maro-compact { --ui-controls-height: 136px; --ui-snack-size: 72px; padding: 4px 10px; }
+body.maro-compact .wrap > header { margin-bottom: 3px; padding-bottom: 3px; }
+body.maro-compact .wrap > header .title-img { width: auto; max-width: none; height: 48px; }
+body.maro-compact .wrap > header .toggles #cSnackDex, body.maro-compact .wrap > header .toggles #tSound { height: 48px; }
+body.maro-compact .chips { --ui-snack-box-space: 46px; margin-top: 8px; gap: 8px; } /* BOX margin is 2px in compact mode. */
+body.maro-compact .action-row .cute-action-button { width: auto; max-width: none; min-height: 48px; padding: 0; }
+body.maro-compact .action-row.onedari-only #cSnackBig,
+body.maro-compact .action-row #cHelpMaro { height: 120px; }
+body.maro-compact #cSnackBox { height: 44px; width: 134px; min-height: 44px; }
+body.maro-compact #snackBoxCount { top: -2px; right: -3px; padding: 1px 5px; font-size: 10px; }
+body.maro-compact .snack-box-tools { padding-bottom: 0; }
+body.maro-compact .foot { display: none; }
+@media (max-height: 530px) {
+  :root { --ui-controls-height: 144px; --ui-snack-size: 72px; }
+}
+
+/* Leave room for Maro and a readable speech banner in very short landscapes. */
+@media (max-height: 360px) {
+  body.maro-compact { --ui-controls-height: 104px; }
+}

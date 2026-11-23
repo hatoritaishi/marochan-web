@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>まろちゃん</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; color: #472d36; background: #fff6ef; }
+    body { margin: 0; min-height: 100svh; display: grid; place-items: center; }
+    main { width: min(100% - 3rem, 24rem); padding: 2rem; box-sizing: border-box; background: #fffdf9; border: 1px solid #ead4cf; border-radius: 1.5rem; box-shadow: 0 16px 50px #59366113; }
+    h1 { margin: 0 0 0.6rem; font-size: 1.75rem; }
+    p { line-height: 1.6; overflow-wrap: anywhere; }
+    label { display: block; margin-block: 1rem; line-height: 1.55; }
+    input { width: 100%; box-sizing: border-box; margin-top: 0.25rem; }
+    input[type=password] { color: #472d36; background: #fff; border: 1px solid #bf9ea1; border-radius: 0.55rem; padding: 0.7rem; font: inherit; }
+    button { width: 100%; background: #824459; color: #fff; border: 0; border-radius: 0.7rem; padding: 0.8rem; font: inherit; cursor: pointer; }
+    button:disabled { opacity: 0.65; cursor: wait; }
+    #error { color: #9a243d; }
+  </style>
+  <script type="module" src="./entry.mjs"></script>
+</head>
+<body>
+  <main>
+    <h1>まろちゃん</h1>
+    <p id="description" role="status">この端末の保存先を確認しています。</p>
+    <form id="access" hidden>
+      <label>
+        パスワード
+        <input id="password" type="password" required maxlength="128">
+      </label>
+      <label id="confirmation-row" hidden>
+        パスワードをもう一度
+        <input id="confirmation" type="password" maxlength="128" autocomplete="new-password">
+      </label>
+      <label id="backup-row" hidden>
+        PCのバックアップを引き継ぐ（任意）
+        <input id="backup" type="file" accept=".json,application/json">
+      </label>
+      <button id="enter" type="submit">まろちゃんに会う</button>
+    </form>
+    <p id="error" role="alert" hidden></p>
+    <noscript>まろちゃんを開くには、ブラウザーでJavaScriptを有効にしてください。</noscript>
+  </main>
+</body>
+</html>

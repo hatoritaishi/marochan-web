@@ -1,0 +1,4 @@
+.maro-cheek-rub-portrait{position:absolute;pointer-events:none;z-index:4}
+.maro-cheek-rub-portrait[hidden]{display:none}
+body.maro-cheek-rub-active #creature,body.maro-cheek-rub-active #creature *{visibility:hidden!important}
+body.maro-cheek-rub-active #petEffectLayer{display:none!important}

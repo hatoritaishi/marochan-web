@@ -1,0 +1,106 @@
+#pc-mini {
+  position: fixed;
+  inset: 0 auto auto 0;
+  z-index: 24;
+  width: max-content;
+  pointer-events: none;
+}
+html.maro-room-opening #pc-mini, body.maro-keyboard #pc-mini { visibility: hidden; }
+#pc-mini[hidden], #pc-mini [hidden], #pc-crystal-game [hidden] { display: none !important; }
+#pc-mini[data-wandering], #pc-mini[data-dragging], #pc-mini[data-flicking] { will-change: transform; }
+#pc-mini button, #pc-crystal-game button, #pc-crystal-game select { font: inherit; }
+#pc-mini .pc-mini-pet {
+  position: relative;
+  display: block;
+  width: clamp(64px, 17vw, 92px);
+  aspect-ratio: 92 / 100;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  touch-action: none;
+  cursor: grab;
+  pointer-events: auto;
+}
+#pc-mini .pc-mini-pet:active { cursor: grabbing; }
+#pc-mini .pc-mini-pet img, #pc-mini .pc-mini-pet canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 5px #62405c55);
+}
+#pc-mini-menu {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: max-content;
+  max-width: min(252px, calc(100vw - 16px));
+  gap: .25rem;
+  padding: .35rem;
+  border: 1px solid #d8bdab;
+  border-radius: .8rem;
+  background: #fff9f2;
+  box-shadow: 0 .35rem 1rem #70486132;
+  pointer-events: auto;
+}
+#pc-mini.pc-mini-near-left #pc-mini-menu { right: auto; left: 0; }
+#pc-mini.pc-mini-near-top #pc-mini-menu { top: 100%; bottom: auto; }
+#pc-mini-menu button, #pc-crystal-game button, #pc-crystal-game select {
+  border: 1px solid #d1a6b9;
+  border-radius: .6rem;
+  background: #fffaf5;
+  color: #57354f;
+  padding: .4rem .6rem;
+  cursor: pointer;
+}
+#pc-mini-menu button { white-space: nowrap; }
+#pc-mini button:focus-visible, #pc-crystal-game :focus-visible { outline: 3px solid #864478; outline-offset: 2px; }
+#pc-crystal-game {
+  width: min(calc(100% - 18px), 510px);
+  max-height: calc(100dvh - 18px);
+  margin: auto;
+  padding: 12px;
+  overflow: auto;
+  color: #583b54;
+  border: 1px solid #deb6c4;
+  border-radius: 22px;
+  background: #fff7f5;
+  box-shadow: 0 25px 90px #4b2a5480;
+  font: 15px/1.45 system-ui, sans-serif;
+  box-sizing: border-box;
+}
+#pc-crystal-game::backdrop { background: #47304788; }
+#pc-crystal-game header { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 0 2px 8px; }
+#pc-crystal-game header h2 { font: 800 20px/1.25 system-ui, sans-serif; margin: 0; }
+#pc-crystal-game .pc-crystal-options, #pc-crystal-game .pc-crystal-result { display: grid; gap: 10px; padding: 5px 12px 12px; }
+#pc-crystal-game .pc-crystal-options img, #pc-crystal-game .pc-crystal-result img { justify-self: center; object-fit: contain; }
+#pc-crystal-game p, #pc-crystal-game h3 { margin: 4px 0; }
+#pc-crystal-game .pc-crystal-options label { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+#pc-crystal-game .pc-crystal-options .pc-crystal-check { justify-content: start; }
+#pc-crystal-game .pc-crystal-primary { background: #91416f; color: white; border-color: #91416f; font-weight: 700; }
+#pc-crystal-game .pc-crystal-notice { border-radius: .55rem; padding: .45rem .65rem; background: #ffeed7; }
+#pc-crystal-game .pc-crystal-board { max-width: min(100%, calc((100dvh - 195px) * .567), 390px); margin-inline: auto; }
+#pc-crystal-game canvas { display: block; width: 100%; height: auto; border-radius: 12px; background: #e6c0dd; touch-action: none; }
+#pc-crystal-game .pc-crystal-hud, #pc-crystal-game .pc-crystal-controls, #pc-crystal-game .pc-crystal-stock {
+  display: flex; justify-content: space-between; align-items: center; gap: .3rem; flex-wrap: wrap;
+}
+#pc-crystal-game .pc-crystal-hud { padding: 0 .25rem .35rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+#pc-crystal-game .pc-crystal-controls, #pc-crystal-game .pc-crystal-stock { margin-top: .4rem; }
+#pc-crystal-game .pc-crystal-stock { padding: .4rem; border-radius: .5rem; background: #f4e6f5; justify-content: flex-start; }
+#pc-crystal-game .pc-crystal-stock button {
+  display: grid; grid-template-columns: 2rem 1fr; align-items: center;
+  column-gap: .45rem; text-align: left;
+}
+#pc-crystal-game .pc-crystal-stock button img { grid-row: span 2; width: 2rem; height: 2rem; object-fit: contain; }
+#pc-crystal-game .pc-crystal-stock button small { white-space: pre-line; }
+#pc-crystal-game .pc-crystal-stock button[data-status="ready"] { background: #ffe8a8; border-color: #bf8725; color: #644413; }
+#pc-crystal-game .pc-crystal-stock button[data-status="active"] { background: #e9e2ff; border-color: #9580bf; color: #5d487d; }
+#pc-crystal-game button:disabled { opacity: .5; cursor: default; }
+#pc-crystal-game .pc-crystal-guide { font-size: .82rem; }
+@media (max-height: 520px) {
+  #pc-crystal-game .pc-crystal-board { max-width: min(100%, 300px); }
+}
