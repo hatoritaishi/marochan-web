@@ -81,6 +81,8 @@ html.maro-room-opening #pc-mini, body.maro-keyboard #pc-mini { visibility: hidde
 #pc-crystal-game p, #pc-crystal-game h3 { margin: 4px 0; }
 #pc-crystal-game .pc-crystal-options label { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
 #pc-crystal-game .pc-crystal-options .pc-crystal-check { justify-content: start; }
+#pc-crystal-game .pc-crystal-start { position: sticky; bottom: 0; padding-top: .35rem; background: #fff7f5; }
+#pc-crystal-game .pc-crystal-start button { width: 100%; min-height: 44px; touch-action: manipulation; }
 #pc-crystal-game .pc-crystal-primary { background: #91416f; color: white; border-color: #91416f; font-weight: 700; }
 #pc-crystal-game .pc-crystal-notice { border-radius: .55rem; padding: .45rem .65rem; background: #ffeed7; }
 #pc-crystal-game .pc-crystal-board { max-width: min(100%, calc((100dvh - 195px) * .567), 390px); margin-inline: auto; }
@@ -103,4 +105,5 @@ html.maro-room-opening #pc-mini, body.maro-keyboard #pc-mini { visibility: hidde
 #pc-crystal-game .pc-crystal-guide { font-size: .82rem; }
 @media (max-height: 520px) {
   #pc-crystal-game .pc-crystal-board { max-width: min(100%, 300px); }
+  #pc-crystal-game .pc-crystal-options > img { width: 56px; height: 61px; }
 }

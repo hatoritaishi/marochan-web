@@ -1,6 +1,7 @@
 import { derive, enter, forget, openDatabase, openVault, rememberRoom, roomKey, vaultAccess } from './vault.mjs?v=2';
 import { importBackup, installBridge, readBackup } from './bridge.mjs';
 import { installSpeech } from './speech.mjs';
+import { installNotifications } from './notifications.mjs';
 
 const description = document.querySelector('#description');
 const form = document.querySelector('#access');
@@ -15,7 +16,7 @@ function showError(error) {
 }
 
 async function fetchRoom() {
-  const response = await fetch(new URL('./room.enc', import.meta.url));
+  const response = await fetch(new URL('./room.enc?v=3', import.meta.url));
   if (!response.ok) throw Error('お部屋を読み込めませんでした。再読み込みしてください。');
   const room = new Uint8Array(await response.arrayBuffer());
   if (room.length <= 44) throw Error('お部屋のデータを読み込めませんでした。');
@@ -50,6 +51,7 @@ async function mount(database, key, html, backup) {
       location.reload();
     });
     installSpeech();
+    installNotifications();
 
     document.open();
     function checkUnsaved(event) {

@@ -219,7 +219,7 @@ function mount(env){
    if(state==='balancing')speak(plan.lines.balance,'happy02');
    else if(state==='falling')speak(plan.lines.fallen,'surprise');
    else if(state==='proud')proudSpoken=false;
-   else if(state==='crying')beginCrying(now);
+   else if(state==='crying'){beginCrying(now);window.MaroWebNotifications?.event('rescue',plan.id);}
    else if(state==='rescuing'){rescueSpoken=false;crySpeech=null;}
   }
   if(state==='rescuing'&&!rescueSpoken&&now>=plan.helpAt+RESCUE_FADE_MS){rescueSpoken=true;speak(plan.lines.thanks,'happy02');}

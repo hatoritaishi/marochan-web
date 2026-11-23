@@ -1,0 +1,30 @@
+body.maro-pages { min-height: 100dvh; box-sizing: border-box; }
+body.maro-pages #pc-tools {
+  position: static;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ui-ink);
+}
+#settingsWebPage { padding: 12px 16px 20px; }
+#settingsWebPage[hidden], #settingsWebPage [hidden] { display: none !important; }
+#settingsWebPage #pc-tools button, .maro-web-notifications button {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--ui-line);
+  border-radius: 12px;
+  background: var(--ui-white);
+  color: var(--ui-ink);
+  font: inherit;
+  cursor: pointer;
+}
+.maro-web-notifications { margin-top: 16px; padding: 14px; border: 1px solid var(--ui-line); border-radius: 16px; }
+.maro-web-notifications h3 { margin: 0 0 8px; font-size: 16px; }
+.maro-web-notifications p { font-size: 13px; line-height: 1.5; }
+.maro-web-notifications button + button { margin-left: .5rem; }
+@media (max-width: 520px) {
+  body.maro-pages { --ui-controls-height: 112px; }
+  body.maro-pages .chips { gap: 8px; margin-top: 8px; }
+}

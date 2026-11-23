@@ -4,10 +4,16 @@
   var saveLabel=pages?'この端末に自動保存':'PCに自動保存';
   var host=document.createElement('aside');host.id='pc-tools';host.setAttribute('aria-label',pages?'この端末での保存':'PCでの保存');
   host.innerHTML='<div class="pc-brand">まろちゃん <small>PCのおへや</small></div><p id="pc-save-status" role="status">PCに自動保存</p><button id="pc-export">バックアップを保存</button><button id="pc-import">バックアップを読み込む</button><button id="pc-recovery">おてがみの復旧状況</button><p class="pc-note">お部屋・おでかけ・おしゃべり・おもいでは、いつものボタンから。音はせっていで変えられるよ。</p>';
-  document.body.appendChild(host);
+  if(pages){
+    var webPage=document.getElementById('settingsWebPage');
+    webPage.appendChild(host);
+    host.querySelector('.pc-brand').remove();
+    host.querySelector('.pc-note').remove();
+    root.MaroWebNotifications?.installSettings();
+  }else document.body.appendChild(host);
   if(root.MaroPC&&root.MaroPC.saveMini&&root.MaroPCRoom){
-    var miniStyles=document.createElement('link');miniStyles.rel='stylesheet';miniStyles.href='./pc-mini/mini.css';document.head.appendChild(miniStyles);
-    var miniModule=document.createElement('script');miniModule.type='module';miniModule.src='./pc-mini/mini.mjs';document.body.appendChild(miniModule);
+    var miniStyles=document.createElement('link');miniStyles.rel='stylesheet';miniStyles.href=pages?'./pc-mini/mini.css?v=3':'./pc-mini/mini.css';document.head.appendChild(miniStyles);
+    var miniModule=document.createElement('script');miniModule.type='module';miniModule.src=pages?'./pc-mini/mini-v3.mjs':'./pc-mini/mini.mjs';document.body.appendChild(miniModule);
   }
   var status=host.querySelector('#pc-save-status'),savedAt=0;
   status.textContent=saveLabel;
@@ -28,7 +34,6 @@
   };
   var recovery=host.querySelector('#pc-recovery');
   if(pages){
-    host.querySelector('.pc-brand small').textContent='ウェブ版';
     recovery.id='pc-lock';recovery.textContent='この端末をロック';
     recovery.onclick=async function(){try{await root.MaroPC.lock();}catch(error){show(error.message);}};
   }else{
