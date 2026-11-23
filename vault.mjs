@@ -43,7 +43,7 @@ export async function vaultAccess(database) {
   return { settings, key: null };
 }
 
-async function derive(password, salt) {
+export async function derive(password, salt) {
   const input = await crypto.subtle.importKey('raw', utf8.encode(password), 'PBKDF2', false, ['deriveKey']);
   return crypto.subtle.deriveKey(
     { name: 'PBKDF2', hash: 'SHA-256', salt, iterations }, input,
@@ -67,9 +67,6 @@ async function decrypt(key, id, entry) {
 }
 
 export async function enter(database, settings, password) {
-  if (!settings && (password.length < 12 || password.length > 128)) {
-    throw Error('12〜128文字のパスワードを設定してください。');
-  }
   const salt = settings?.salt ?? crypto.getRandomValues(new Uint8Array(16));
   const key = await derive(password, salt);
   if (settings) {
@@ -83,7 +80,7 @@ export async function enter(database, settings, password) {
     const verifier = await encrypt(key, 'proof', proof);
     await transaction(database, ['info'], 'readwrite', tx => {
       const info = tx.objectStore('info');
-      info.add({ salt, proof: verifier }, 'settings');
+      info.add({ salt, proof: verifier, mode: 'shared' }, 'settings');
       info.add(0, 'revision');
     });
   }
@@ -92,7 +89,19 @@ export async function enter(database, settings, password) {
 }
 
 export function forget(database) {
-  return transaction(database, ['info'], 'readwrite', tx => tx.objectStore('info').delete('remember'));
+  return transaction(database, ['info'], 'readwrite', tx => {
+    const info = tx.objectStore('info');
+    info.delete('remember');
+    info.delete('room-key');
+  });
+}
+
+export function rememberRoom(database, key) {
+  return transaction(database, ['info'], 'readwrite', tx => tx.objectStore('info').put(key, 'room-key'));
+}
+
+export function roomKey(database) {
+  return read(database, 'info', 'room-key');
 }
 
 export async function openVault(database, key) {

@@ -18,7 +18,7 @@
     button:disabled { opacity: 0.65; cursor: wait; }
     #error { color: #9a243d; }
   </style>
-  <script type="module" src="./entry.mjs"></script>
+  <script type="module" src="./entry.mjs?v=2"></script>
 </head>
 <body>
   <main>
@@ -27,11 +27,11 @@
     <form id="access" hidden>
       <label>
         パスワード
-        <input id="password" type="password" required maxlength="128">
+        <input id="password" type="password" required maxlength="128" autocomplete="current-password">
       </label>
-      <label id="confirmation-row" hidden>
-        パスワードをもう一度
-        <input id="confirmation" type="password" maxlength="128" autocomplete="new-password">
+      <label id="legacy-row" hidden>
+        旧版で設定した端末用パスワード
+        <input id="legacy-password" type="password" maxlength="128" autocomplete="current-password">
       </label>
       <label id="backup-row" hidden>
         PCのバックアップを引き継ぐ（任意）

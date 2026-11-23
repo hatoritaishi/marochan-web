@@ -1,17 +1,32 @@
-import { enter, forget, openDatabase, openVault, vaultAccess } from './vault.mjs';
+import { derive, enter, forget, openDatabase, openVault, rememberRoom, roomKey, vaultAccess } from './vault.mjs?v=2';
 import { importBackup, installBridge, readBackup } from './bridge.mjs';
 import { installSpeech } from './speech.mjs';
 
 const description = document.querySelector('#description');
 const form = document.querySelector('#access');
 const password = document.querySelector('#password');
-const confirmation = document.querySelector('#confirmation');
+const legacyPassword = document.querySelector('#legacy-password');
 const errorBox = document.querySelector('#error');
 const submit = document.querySelector('#enter');
 
 function showError(error) {
   errorBox.textContent = error.message || 'この端末の保存先を開けませんでした。';
   errorBox.hidden = false;
+}
+
+async function fetchRoom() {
+  const response = await fetch(new URL('./room.enc', import.meta.url));
+  if (!response.ok) throw Error('お部屋を読み込めませんでした。再読み込みしてください。');
+  const room = new Uint8Array(await response.arrayBuffer());
+  if (room.length <= 44) throw Error('お部屋のデータを読み込めませんでした。');
+  return room;
+}
+
+async function decryptRoom(room, key) {
+  const plain = await crypto.subtle.decrypt({
+    name: 'AES-GCM', iv: room.slice(16, 28), additionalData: new TextEncoder().encode('marochan-room-v2'),
+  }, key, room.slice(28));
+  return new TextDecoder().decode(plain);
 }
 
 async function acquireRoom() {
@@ -24,13 +39,9 @@ async function acquireRoom() {
   });
 }
 
-async function mount(database, key, backup) {
+async function mount(database, key, html, backup) {
   const release = await acquireRoom();
   try {
-    const roomURL = new URL('./room.template', import.meta.url);
-    const response = await fetch(roomURL);
-    if (!response.ok) throw Error('お部屋を読み込めませんでした。再読み込みしてください。');
-    const html = await response.text();
     const vault = await openVault(database, key);
     if (backup) await importBackup(vault, backup);
     installBridge(vault, async () => {
@@ -76,22 +87,27 @@ async function start() {
   if (!window.isSecureContext || !window.indexedDB) throw Error('HTTPSのまろちゃんのページを開いてください。');
   const database = await openDatabase();
   const access = await vaultAccess(database);
-  if (access.key) {
+  let encryptedRoom;
+  const rememberedRoom = await roomKey(database);
+  if (access.key && rememberedRoom) {
     description.textContent = 'まろちゃんのお部屋を開いています。';
-    await mount(database, access.key);
-    return;
+    encryptedRoom = await fetchRoom();
+    let html;
+    try { html = await decryptRoom(encryptedRoom, rememberedRoom); }
+    catch (error) { if (error.name !== 'OperationError') throw error; }
+    if (html) {
+      await mount(database, access.key, html);
+      return;
+    }
   }
 
   const firstTime = !access.settings;
-  description.textContent = firstTime
-    ? 'このブラウザー用のパスワードを12文字以上で設定してください。次からはそのまま会えます。'
-    : 'このブラウザーで設定したパスワードを入力してください。';
-  password.autocomplete = firstTime ? 'new-password' : 'current-password';
-  if (firstTime) {
-    document.querySelector('#confirmation-row').hidden = false;
-    document.querySelector('#backup-row').hidden = false;
-    password.minLength = 12;
-    confirmation.required = true;
+  const legacy = !firstTime && !access.key && access.settings.mode !== 'shared';
+  description.textContent = 'パスワードを入れてね。次からは同じブラウザーでそのまま会えます。';
+  document.querySelector('#backup-row').hidden = !firstTime;
+  if (legacy) {
+    document.querySelector('#legacy-row').hidden = false;
+    legacyPassword.required = true;
   }
   form.hidden = false;
   form.addEventListener('submit', async event => {
@@ -99,15 +115,21 @@ async function start() {
     submit.disabled = true;
     errorBox.hidden = true;
     try {
-      if (firstTime && password.value !== confirmation.value) throw Error('入力したパスワードが一致していません。');
+      encryptedRoom ||= await fetchRoom();
+      const newRoomKey = await derive(password.value, encryptedRoom.slice(0, 16));
+      let html;
+      try { html = await decryptRoom(encryptedRoom, newRoomKey); }
+      catch (error) {
+        if (error.name === 'OperationError') throw Error('パスワードが違います。');
+        throw error;
+      }
       const file = document.querySelector('#backup').files[0];
       const backup = file && await readBackup(JSON.parse(await file.text()));
-      const key = await enter(database, access.settings, password.value);
+      access.key ||= await enter(database, access.settings, legacy ? legacyPassword.value : password.value);
+      await rememberRoom(database, newRoomKey);
       password.value = '';
-      confirmation.value = '';
-      // A failed mount can be retried without creating or replacing the vault.
-      access.settings = (await vaultAccess(database)).settings;
-      await mount(database, key, backup);
+      legacyPassword.value = '';
+      await mount(database, access.key, html, backup);
     } catch (error) {
       showError(error);
       submit.disabled = false;
